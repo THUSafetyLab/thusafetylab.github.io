@@ -4,21 +4,32 @@ layout: default
 
 <div class="post">
 
-  <!-- ==========================================
-       Header: Lab title and logo
-       ========================================== -->
+  <!-- ===========================
+       Header
+       =========================== -->
 
   <header class="post-header">
 
-    <div class="lab-title-row">
+    <div style="
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:4px;
+    ">
 
       <img
         src="{{ '/assets/img/logo_tsinghua_svm.png' | relative_url }}"
         alt="Tsinghua University"
-        class="lab-header-logo"
+        style="
+          height:50px;
+          width:auto;
+          object-fit:contain;
+          display:block;
+        "
       >
 
-      <h1 class="post-title">
+      <h1 class="post-title" style="margin:0;">
         {% if site.title == 'blank' %}
           <span class="font-weight-bold">
             {{ site.first_name }}
@@ -32,20 +43,22 @@ layout: default
 
     </div>
 
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc">
+      {{ page.subtitle }}
+    </p>
 
   </header>
 
 
   <article>
 
-    <!-- ==========================================
-         Hero: Introduction + Slideshow
-         ========================================== -->
+    <!-- ===========================
+         Hero Section
+         =========================== -->
 
     <div class="hero-section">
 
-      <!-- Left: Research introduction -->
+      <!-- Left text -->
 
       <div class="hero-text">
 
@@ -58,30 +71,26 @@ layout: default
           The Intelligent Safety Laboratory advances human-centered vehicle safety by integrating human cognition, artificial intelligence, experimental research, and engineering approaches toward the vision of zero traffic fatalities and serious injuries.
         </p>
 
-        <div class="hero-actions">
+        <a
+          class="home-button primary"
+          href="{{ '/Research/' | relative_url }}"
+        >
+          Explore Research
+        </a>
 
-          <a
-            class="home-button primary"
-            href="{{ '/Research/' | relative_url }}"
-          >
-            Explore Research
-          </a>
-
-          <a
-            class="home-button secondary"
-            href="{{ '/people/' | relative_url }}"
-          >
-            Meet the Team
-          </a>
-
-        </div>
+        <a
+          class="home-button secondary"
+          href="{{ '/people/' | relative_url }}"
+        >
+          Meet the Team
+        </a>
 
       </div>
 
 
-      <!-- Right: Photo slideshow -->
+      <!-- Right slideshow -->
 
-      {% if page.profile.images and page.profile.images.size > 0 %}
+      {% if page.profile.images %}
 
         <div class="hero-image">
 
@@ -99,7 +108,7 @@ layout: default
                 aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
               >
 
-                <!-- Background layer: same image, blurred -->
+                <!-- Background: blurred copy -->
 
                 <img
                   class="home-slide-bg"
@@ -110,7 +119,7 @@ layout: default
                   decoding="async"
                 >
 
-                <!-- Foreground layer: complete original image -->
+                <!-- Foreground: full original photo -->
 
                 <img
                   class="home-slide-fg"
@@ -133,20 +142,21 @@ layout: default
     </div>
 
 
-    <!-- ==========================================
+    <!-- ===========================
          Main page content
-         Research Areas / Latest News /
+         Research Areas
+         Latest News
          Recent Papers
-         ========================================== -->
+         =========================== -->
 
     <div class="clearfix">
       {{ content }}
     </div>
 
 
-    <!-- ==========================================
+    <!-- ===========================
          Social links
-         ========================================== -->
+         =========================== -->
 
     {% if page.social %}
 
@@ -169,58 +179,26 @@ layout: default
 </div>
 
 
-<!-- ==============================================
-     Homepage CSS
-     ============================================== -->
+<!-- ===========================
+     Homepage styles
+     =========================== -->
 
 <style>
 
-/* ==============================================
-   1. Basic layout safeguards
-   ============================================== */
-
-.post {
-  min-width: 0;
-}
-
-.post article {
-  min-width: 0;
-}
-
-.post *,
-.post *::before,
-.post *::after {
-  box-sizing: border-box;
-}
+/* =========================================================
+   HOME PAGE — Intelligent Safety Laboratory
+   ========================================================= */
 
 
-/* ==============================================
-   2. Header
-   ============================================== */
+/* =========================================================
+   Header
+   ========================================================= */
 
 .post-header {
   margin-bottom: 28px;
 }
 
-.lab-title-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 4px;
-}
-
-.lab-header-logo {
-  display: block;
-  height: 50px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-  margin: 0;
-}
-
 .post-header .post-title {
-  margin: 0;
   font-size: 2rem;
   font-weight: 650;
   line-height: 1.2;
@@ -233,22 +211,20 @@ layout: default
 }
 
 
-/* ==============================================
-   3. Hero layout
-   ============================================== */
+/* =========================================================
+   Hero — preserve original homepage layout
+   ========================================================= */
 
 .hero-section {
   display: grid;
 
   grid-template-columns:
     minmax(0, 1.05fr)
-    minmax(0, 0.95fr);
+    minmax(360px, 0.95fr);
 
-  gap: 40px;
+  gap: 56px;
+
   align-items: center;
-
-  width: 100%;
-  min-width: 0;
 
   padding: 38px 0 72px;
   margin-bottom: 0;
@@ -257,33 +233,28 @@ layout: default
     var(--global-divider-color, #e5e5e5);
 }
 
-.hero-section > * {
-  min-width: 0;
-}
 
-
-/* Left: introduction */
+/* Left text */
 
 .hero-text {
-  width: 100%;
+  width: auto;
   min-width: 0;
 }
 
 .hero-text h1 {
   margin: 0 0 24px;
 
-  font-size: clamp(38px, 4.5vw, 64px);
+  font-size: clamp(44px, 5vw, 64px);
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: -0.03em;
 
   color: var(--global-text-color, #222);
-
-  overflow-wrap: normal;
 }
 
 .hero-text p {
   max-width: 620px;
+
   margin: 0 0 32px;
 
   font-size: 18px;
@@ -295,29 +266,22 @@ layout: default
 
 /* Hero buttons */
 
-.hero-actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
 .home-button {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
 
   min-height: 44px;
+
   padding: 10px 22px;
-  margin: 0;
+  margin: 0 12px 10px 0;
 
   border-radius: 5px;
 
   font-size: 15px;
   font-weight: 500;
-  line-height: 1.4;
 
-  text-align: center;
   text-decoration: none !important;
 
   transition:
@@ -354,17 +318,21 @@ layout: default
 }
 
 
-/* ==============================================
-   4. Slideshow container
-   Fixed 4:3 aspect ratio
-   ============================================== */
+/* =========================================================
+   Right image container
+   ========================================================= */
 
 .hero-image {
-  display: block;
   width: 100%;
   min-width: 0;
-  max-width: 100%;
 }
+
+
+/* =========================================================
+   Slideshow
+   Fixed 4:3 frame
+   Blurred background + complete foreground
+   ========================================================= */
 
 .home-slideshow {
   position: relative;
@@ -384,7 +352,7 @@ layout: default
 }
 
 
-/* Each slide occupies the complete frame */
+/* Each slide fills the slideshow */
 
 .home-slideshow .home-slide {
   position: absolute;
@@ -395,13 +363,16 @@ layout: default
   width: 100%;
   height: 100%;
 
+  box-sizing: border-box;
+
   margin: 0;
   padding: 0;
 
   opacity: 0;
   visibility: hidden;
 
-  z-index: 0;
+  overflow: hidden;
+
   pointer-events: none;
 
   transition:
@@ -416,7 +387,6 @@ layout: default
   opacity: 1;
   visibility: visible;
 
-  z-index: 1;
   pointer-events: auto;
 
   transition:
@@ -425,8 +395,7 @@ layout: default
 }
 
 
-/* Apply strict dimensions to slideshow images
-   to override al-folio default image styles */
+/* Scope image resets to slideshow images only */
 
 .home-slideshow .home-slide img {
   position: absolute;
@@ -445,17 +414,19 @@ layout: default
 
   margin: 0;
   padding: 0;
+
   border: 0;
   border-radius: 0;
+
+  box-sizing: border-box;
 
   object-position: center;
 }
 
 
-/* Background image:
-   fill frame and blur the same photo */
+/* Blurred background */
 
-.home-slideshow .home-slide-bg {
+.home-slideshow .home-slide .home-slide-bg {
   object-fit: cover;
 
   filter: blur(18px);
@@ -464,29 +435,14 @@ layout: default
   opacity: 0.80;
 
   z-index: 0;
+
   pointer-events: none;
 }
 
 
-/* Soft translucent overlay */
+/* Foreground photo — show the full image */
 
-.home-slideshow .home-slide::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background: rgba(255, 255, 255, 0.06);
-
-  z-index: 1;
-  pointer-events: none;
-}
-
-
-/* Foreground image:
-   preserve full original image */
-
-.home-slideshow .home-slide-fg {
+.home-slideshow .home-slide .home-slide-fg {
   object-fit: contain;
 
   filter: none;
@@ -494,13 +450,13 @@ layout: default
 
   opacity: 1;
 
-  z-index: 2;
+  z-index: 1;
 }
 
 
-/* ==============================================
-   5. Research Areas
-   ============================================== */
+/* =========================================================
+   Research Areas — preserve original styling
+   ========================================================= */
 
 .section-title {
   margin: 72px 0 30px;
@@ -508,6 +464,7 @@ layout: default
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
+
   letter-spacing: -0.015em;
 
   color: var(--global-text-color, #222);
@@ -553,7 +510,7 @@ layout: default
 }
 
 
-/* Equal-size research cover images */
+/* Research cover images */
 
 .research-card img {
   display: block;
@@ -597,9 +554,9 @@ layout: default
 }
 
 
-/* ==============================================
-   6. Latest News + Recent Papers
-   ============================================== */
+/* =========================================================
+   Latest News + Recent Papers
+   ========================================================= */
 
 .bottom-grid {
   display: grid;
@@ -638,6 +595,9 @@ layout: default
   text-decoration: none !important;
 }
 
+
+/* Keep content inside its column */
+
 .home-papers-column,
 .home-news-column {
   width: 100%;
@@ -645,29 +605,19 @@ layout: default
 }
 
 
-/* ==============================================
-   7. Responsive layout
-   ============================================== */
+/* =========================================================
+   Responsive — preserve original breakpoints
+   ========================================================= */
 
-/* Medium screens */
-
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 
   .hero-section {
-    grid-template-columns:
-      minmax(0, 1fr)
-      minmax(0, 1fr);
-
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
   }
 
   .hero-text h1 {
-    font-size: clamp(36px, 4vw, 48px);
-  }
-
-  .hero-text p {
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 44px;
   }
 
   .research-grid {
@@ -678,34 +628,25 @@ layout: default
     height: 190px;
   }
 
-  .bottom-grid {
-    gap: 36px;
-  }
-
 }
 
 
-/* Tablet / narrow desktop */
-
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
   .hero-section {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
 
-    gap: 32px;
+    gap: 36px;
 
-    padding: 28px 0 54px;
-  }
-
-  .hero-text h1 {
-    font-size: clamp(38px, 6vw, 52px);
+    padding: 24px 0 54px;
   }
 
   .hero-image {
-    width: 100%;
     max-width: 640px;
+  }
 
-    margin: 0 auto;
+  .hero-text h1 {
+    font-size: 42px;
   }
 
   .research-grid {
@@ -718,45 +659,26 @@ layout: default
   }
 
   .bottom-grid {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 54px;
   }
 
 }
 
 
-/* Small mobile screens */
-
 @media (max-width: 520px) {
-
-  .lab-title-row {
-    gap: 10px;
-  }
-
-  .lab-header-logo {
-    height: 42px;
-  }
-
-  .post-header .post-title {
-    font-size: 1.55rem;
-  }
 
   .hero-text h1 {
     font-size: 36px;
-    line-height: 1.12;
   }
 
   .hero-text p {
     font-size: 16px;
   }
 
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
   .home-button {
     width: 100%;
+    margin-right: 0;
   }
 
   .section-title {
@@ -771,9 +693,7 @@ layout: default
 }
 
 
-/* ==============================================
-   8. Reduced motion accessibility
-   ============================================== */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -787,9 +707,9 @@ layout: default
 </style>
 
 
-<!-- ==============================================
-     Homepage slideshow JavaScript
-     ============================================== -->
+<!-- ===========================
+     Slideshow JavaScript
+     =========================== -->
 
 <script>
 (function () {
@@ -797,12 +717,14 @@ layout: default
 
   function initializeSlideshow() {
 
-    const slideshow = document.querySelector(".home-slideshow");
+    const slideshow =
+      document.querySelector(".home-slideshow");
 
     if (!slideshow) return;
 
-    /* Prevent duplicate initialization */
-    if (slideshow.dataset.initialized === "true") return;
+    if (slideshow.dataset.initialized === "true") {
+      return;
+    }
 
     slideshow.dataset.initialized = "true";
 
@@ -812,37 +734,39 @@ layout: default
 
     if (slides.length === 0) return;
 
-    let current = -1;
+    let current = 0;
 
     const interval = 4000;
 
 
-    /* Check whether a foreground image is ready */
+    /* Check image loading */
 
-    function isReady(slide) {
+    function isLoaded(slide) {
 
-      const img = slide.querySelector(".home-slide-fg");
+      const image =
+        slide.querySelector(".home-slide-fg");
 
       return Boolean(
-        img &&
-        img.complete &&
-        img.naturalWidth > 0
+        image &&
+        image.complete &&
+        image.naturalWidth > 0
       );
 
     }
 
 
-    /* Switch both image layers together */
+    /* Activate one slide */
 
     function showSlide(index) {
-
-      if (!isReady(slides[index])) return false;
 
       slides.forEach(function (slide, i) {
 
         const active = i === index;
 
-        slide.classList.toggle("active", active);
+        slide.classList.toggle(
+          "active",
+          active
+        );
 
         slide.setAttribute(
           "aria-hidden",
@@ -853,23 +777,19 @@ layout: default
 
       current = index;
 
-      return true;
-
     }
 
 
-    /* Find the next available image */
+    /* Find the next loaded image */
 
     function nextSlide() {
-
-      const start = current < 0 ? -1 : current;
 
       for (let step = 1; step <= slides.length; step++) {
 
         const index =
-          (start + step + slides.length) % slides.length;
+          (current + step) % slides.length;
 
-        if (isReady(slides[index])) {
+        if (isLoaded(slides[index])) {
 
           if (index !== current) {
             showSlide(index);
@@ -884,36 +804,24 @@ layout: default
     }
 
 
-    /* React when images finish loading */
+    /* Ensure all slideshow images are loaded */
 
-    slides.forEach(function (slide, index) {
+    slides.forEach(function (slide) {
 
-      const image = slide.querySelector(".home-slide-fg");
+      const images =
+        slide.querySelectorAll("img");
 
-      if (!image) return;
-
-      image.loading = "eager";
-
-      if (!image.complete) {
-
-        image.addEventListener("load", function () {
-
-          /* Show first successful image if nothing is visible */
-
-          if (current === -1) {
-            showSlide(index);
-          }
-
-        }, { once: true });
-
-      }
+      images.forEach(function (image) {
+        image.loading = "eager";
+      });
 
     });
 
 
-    /* Show first available image immediately */
+    /* Show first successfully loaded image */
 
-    const initialIndex = slides.findIndex(isReady);
+    const initialIndex =
+      slides.findIndex(isLoaded);
 
     if (initialIndex >= 0) {
 
@@ -921,31 +829,74 @@ layout: default
 
     } else {
 
-      /* Keep first slide visible while images load */
+      /* Keep first slide as placeholder */
 
-      slides[0].classList.add("active");
+      showSlide(0);
 
-      slides[0].setAttribute("aria-hidden", "false");
+      slides.forEach(function (slide, index) {
+
+        const image =
+          slide.querySelector(".home-slide-fg");
+
+        if (!image) return;
+
+        image.addEventListener(
+          "load",
+          function () {
+
+            const activeSlide =
+              slides[current];
+
+            if (!isLoaded(activeSlide)) {
+              showSlide(index);
+            }
+
+          }
+        );
+
+      });
 
     }
+
+
+    /* Skip failed image when necessary */
+
+    slides.forEach(function (slide, index) {
+
+      const image =
+        slide.querySelector(".home-slide-fg");
+
+      if (!image) return;
+
+      image.addEventListener(
+        "error",
+        function () {
+
+          if (current === index) {
+            nextSlide();
+          }
+
+        }
+      );
+
+    });
 
 
     /* Automatic rotation */
 
     if (slides.length > 1) {
 
-      window.setInterval(function () {
-
-        nextSlide();
-
-      }, interval);
+      window.setInterval(
+        nextSlide,
+        interval
+      );
 
     }
 
   }
 
 
-  /* Works whether the script runs before or after DOM ready */
+  /* Initialize safely */
 
   if (document.readyState === "loading") {
 
