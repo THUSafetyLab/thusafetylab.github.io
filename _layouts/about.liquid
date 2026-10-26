@@ -1,233 +1,178 @@
+
 ---
 layout: default
 ---
 
 <div class="post">
 
+  <header class="post-header">
 
-<header class="post-header">
-
-
-  <div style="
-    display:flex;
-    align-items:center;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-bottom:4px;
-  ">
-
-
-    <img
-      src="{{ '/assets/img/logo_tsinghua_svm.png' | relative_url }}"
-      alt="Tsinghua University"
-      style="
-        height:50px;
-        width:auto;
-        object-fit:contain;
-        display:block;
-      "
-    >
-
-
-    <h1 class="post-title" style="margin:0;">
-
-      {% if site.title == 'blank' %}
-
-        <span class="font-weight-bold">
-          {{ site.first_name }}
-        </span>
-
-        {{ site.middle_name }}
-
-        {{ site.last_name }}
-
-      {% else %}
-
-        {{ site.title }}
-
-      {% endif %}
-
-    </h1>
-
-
-  </div>
-
-
-
-  <p class="desc">
-    {{ page.subtitle }}
-  </p>
-
-
-</header>
-
-
-
-
-
-<article>
-
-
-<!-- ===========================
-     Hero Section
-     =========================== -->
-
-
-<div class="hero-section">
-
-
-
-  <!-- Left text -->
-
-  <div class="hero-text">
-
-
-    <h1>
-      Human-centered<br>
-      Vehicle Safety
-    </h1>
-
-
-
-    <p>
-      The Intelligent Safety Laboratory advances human-centered vehicle safety by integrating human cognition, artificial intelligence, experimental research, and engineering approaches toward the vision of zero traffic fatalities and serious injuries.
-    </p>
-
-
-
-    <a
-      class="home-button primary"
-      href="{{ '/Research/' | relative_url }}"
-    >
-      Explore Research
-    </a>
-
-
-
-    <a
-      class="home-button secondary"
-      href="{{ '/people/' | relative_url }}"
-    >
-      Meet the Team
-    </a>
-
-
-  </div>
-
-
-
-
-
-  <!-- Right slideshow -->
-
-  {% if page.profile.images %}
-
-
-  <div class="hero-image">
-
-
-    <div class="home-slideshow">
-
-
-      {% for image in page.profile.images %}
-
+    <div style="
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:4px;
+    ">
 
       <img
-
-        src="{{ '/assets/img/' | append:image | relative_url }}"
-
-        alt="Intelligent Safety Laboratory"
-
-        class="home-slide {% if forloop.first %}active{% endif %}"
-
+        src="{{ '/assets/img/logo_tsinghua_svm.png' | relative_url }}"
+        alt="Tsinghua University"
+        style="
+          height:50px;
+          width:auto;
+          object-fit:contain;
+          display:block;
+        "
       >
 
+      <h1 class="post-title" style="margin:0;">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">
+            {{ site.first_name }}
+          </span>
+          {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
 
-      {% endfor %}
+    </div>
+
+    <p class="desc">
+      {{ page.subtitle }}
+    </p>
+
+  </header>
 
 
+  <article>
+
+    <!-- ===========================
+         Hero Section
+         =========================== -->
+
+    <div class="hero-section">
+
+      <!-- Left text -->
+
+      <div class="hero-text">
+
+        <h1>
+          Human-centered<br>
+          Vehicle Safety
+        </h1>
+
+        <p>
+          The Intelligent Safety Laboratory advances human-centered vehicle safety by integrating human cognition, artificial intelligence, experimental research, and engineering approaches toward the vision of zero traffic fatalities and serious injuries.
+        </p>
+
+        <a
+          class="home-button primary"
+          href="{{ '/Research/' | relative_url }}"
+        >
+          Explore Research
+        </a>
+
+        <a
+          class="home-button secondary"
+          href="{{ '/people/' | relative_url }}"
+        >
+          Meet the Team
+        </a>
+
+      </div>
+
+
+      <!-- Right slideshow -->
+
+      {% if page.profile.images %}
+
+        <div class="hero-image">
+
+          <div class="home-slideshow" aria-label="Intelligent Safety Laboratory photo slideshow">
+
+            {% for image in page.profile.images %}
+
+              <div
+                class="home-slide {% if forloop.first %}active{% endif %}"
+                aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
+              >
+
+                <!-- Blurred full-frame background -->
+
+                <img
+                  src="{{ '/assets/img/' | append: image | relative_url }}"
+                  alt=""
+                  class="home-slide-bg"
+                  aria-hidden="true"
+                  {% unless forloop.first %}loading="lazy"{% endunless %}
+                >
+
+                <!-- Complete foreground image -->
+
+                <img
+                  src="{{ '/assets/img/' | append: image | relative_url }}"
+                  alt="Intelligent Safety Laboratory"
+                  class="home-slide-fg"
+                  {% unless forloop.first %}loading="lazy"{% endunless %}
+                >
+
+              </div>
+
+            {% endfor %}
+
+          </div>
+
+        </div>
+
+      {% endif %}
 
     </div>
 
 
-  </div>
+    <!-- ===========================
+         Page content
+         Includes research cards
+         =========================== -->
+
+    <div class="clearfix">
+      {{ content }}
+    </div>
 
 
-  {% endif %}
+    <!-- ===========================
+         Social links
+         =========================== -->
 
+    {% if page.social %}
 
+      <div class="social">
+
+        <div class="contact-icons">
+          {% social_links %}
+        </div>
+
+        <div class="contact-note">
+          {{ site.contact_note }}
+        </div>
+
+      </div>
+
+    {% endif %}
+
+  </article>
 
 </div>
-
-
-
 
 
 <!-- ===========================
-     Page content
-     Includes research cards
+     Homepage styles
      =========================== -->
-
-
-<div class="clearfix">
-
-{{ content }}
-
-</div>
-
-
-
-
-
-<!-- ===========================
-     Social links
-     =========================== -->
-
-
-{% if page.social %}
-
-
-<div class="social">
-
-
-<div class="contact-icons">
-
-{% social_links %}
-
-</div>
-
-
-<div class="contact-note">
-
-{{ site.contact_note }}
-
-</div>
-
-
-</div>
-
-
-{% endif %}
-
-
-
-
-
-</article>
-
-
-</div>
-
-
-
-
-
-<!-- ===========================
-     Slideshow style
-     =========================== -->
-
 
 <style>
+
 /* =========================================================
    HOME PAGE — Intelligent Safety Laboratory
    ========================================================= */
@@ -277,7 +222,6 @@ layout: default
   min-width: 0;
 }
 
-
 .hero-text h1 {
   margin: 0 0 24px;
 
@@ -288,7 +232,6 @@ layout: default
 
   color: var(--global-text-color, #222);
 }
-
 
 .hero-text p {
   max-width: 620px;
@@ -328,11 +271,9 @@ layout: default
     border-color 0.2s ease;
 }
 
-
 .home-button:hover {
   transform: translateY(-1px);
 }
-
 
 .home-button.primary {
   border: 1px solid #551a8b;
@@ -340,19 +281,16 @@ layout: default
   color: #fff !important;
 }
 
-
 .home-button.primary:hover {
   background: #43146e;
   border-color: #43146e;
 }
-
 
 .home-button.secondary {
   border: 1px solid #551a8b;
   background: transparent;
   color: #551a8b !important;
 }
-
 
 .home-button.secondary:hover {
   background: #551a8b;
@@ -368,8 +306,14 @@ layout: default
 }
 
 
+/* =========================================================
+   Homepage slideshow
+   Fixed 4:3 frame + blurred background + complete image
+   ========================================================= */
+
 .home-slideshow {
   position: relative;
+
   width: 100%;
   aspect-ratio: 4 / 3;
 
@@ -377,8 +321,12 @@ layout: default
   border-radius: 12px;
 
   background: #f2f2f2;
+
+  isolation: isolate;
 }
 
+
+/* Every slide fills the same fixed frame */
 
 .home-slideshow .home-slide {
   position: absolute;
@@ -387,20 +335,89 @@ layout: default
   width: 100%;
   height: 100%;
 
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.8s ease-in-out,
+    visibility 0s linear 0.8s;
+
+  pointer-events: none;
+}
+
+
+/* Active slide */
+
+.home-slideshow .home-slide.active {
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.8s ease-in-out,
+    visibility 0s linear 0s;
+
+  pointer-events: auto;
+}
+
+
+/* Blurred background using the same source image */
+
+.home-slideshow .home-slide-bg {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter: blur(18px);
+  transform: scale(1.1);
+
+  opacity: 0.85;
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+
+/* Optional soft overlay to make background less distracting */
+
+.home-slideshow .home-slide::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* Foreground: never crop the original photograph */
+
+.home-slideshow .home-slide-fg {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
   object-fit: contain;
   object-position: center;
 
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
+  border-radius: 0;
 
-.home-slideshow .home-slide.active {
-  opacity: 1;
-}
-
-
-.home-slideshow .home-slide.active {
-  opacity: 1;
+  z-index: 2;
 }
 
 
@@ -420,7 +437,6 @@ layout: default
   color: var(--global-text-color, #222);
 }
 
-
 .research-grid {
   display: grid;
 
@@ -430,7 +446,6 @@ layout: default
 
   margin-bottom: 76px;
 }
-
 
 .research-card {
   min-width: 0;
@@ -450,7 +465,6 @@ layout: default
     box-shadow 0.25s ease;
 }
 
-
 .research-card:hover {
   transform: translateY(-4px);
 
@@ -460,7 +474,7 @@ layout: default
 }
 
 
-/* All three images have exactly the same display size */
+/* All three research images retain equal display sizes */
 
 .research-card img {
   display: block;
@@ -476,7 +490,6 @@ layout: default
   object-position: center;
 }
 
-
 .research-card h3 {
   margin: 0;
 
@@ -489,13 +502,11 @@ layout: default
   color: var(--global-text-color, #222);
 }
 
-
 .research-card ul {
   margin: 0;
 
   padding: 0 24px 24px 44px;
 }
-
 
 .research-card li {
   margin-bottom: 6px;
@@ -526,11 +537,9 @@ layout: default
   border-top: 1px solid var(--global-divider-color, #e5e5e5);
 }
 
-
 .bottom-grid > div {
   min-width: 0;
 }
-
 
 .bottom-grid h2 {
   margin: 0 0 24px;
@@ -541,7 +550,6 @@ layout: default
 
   color: var(--global-text-color, #222);
 }
-
 
 .bottom-grid h2 a {
   color: inherit !important;
@@ -559,7 +567,7 @@ layout: default
 
 
 /* =========================================================
-   Responsive
+   Responsive layout
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -594,16 +602,13 @@ layout: default
     padding: 24px 0 54px;
   }
 
-
   .hero-image {
     max-width: 640px;
   }
 
-
   .hero-text h1 {
     font-size: 42px;
   }
-
 
   .research-grid {
     grid-template-columns: 1fr;
@@ -611,11 +616,9 @@ layout: default
     gap: 24px;
   }
 
-
   .research-card img {
     height: 260px;
   }
-
 
   .bottom-grid {
     grid-template-columns: 1fr;
@@ -632,11 +635,9 @@ layout: default
     font-size: 36px;
   }
 
-
   .hero-text p {
     font-size: 16px;
   }
-
 
   .home-button {
     width: 100%;
@@ -644,79 +645,190 @@ layout: default
     margin-right: 0;
   }
 
-
   .section-title {
     margin-top: 54px;
 
     font-size: 26px;
   }
 
-
   .research-card img {
     height: 210px;
   }
 
 }
+
+
+/* Accessibility: reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .home-slideshow .home-slide,
+  .home-slideshow .home-slide.active {
+    transition: none;
+  }
+
+}
+
 </style>
-
-
-
 
 
 <!-- ===========================
      Slideshow script
      =========================== -->
 
-
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slideshow = document.querySelector(".home-slideshow");
+
+  if (!slideshow) return;
+
+  const slides = Array.from(
+    slideshow.querySelectorAll(".home-slide")
+  );
+
+  if (slides.length === 0) return;
+
+  let current = 0;
+  let timer = null;
+
+  const interval = 4000;
 
 
-document.addEventListener(
-"DOMContentLoaded",
-function(){
+  /*
+   * Check whether the foreground image has loaded.
+   */
+  function isLoaded(slide) {
+    const img = slide.querySelector(".home-slide-fg");
+
+    return Boolean(
+      img &&
+      img.complete &&
+      img.naturalWidth > 0
+    );
+  }
 
 
-const slides =
-document.querySelectorAll(
-".home-slideshow .home-slide"
-);
+  /*
+   * Display one complete slide.
+   * The foreground and background are switched together.
+   */
+  function showSlide(index) {
+
+    if (!isLoaded(slides[index])) {
+      return false;
+    }
+
+    slides.forEach(function (slide, i) {
+
+      const isActive = i === index;
+
+      slide.classList.toggle("active", isActive);
+
+      slide.setAttribute(
+        "aria-hidden",
+        isActive ? "false" : "true"
+      );
+
+    });
+
+    current = index;
+
+    return true;
+  }
 
 
+  /*
+   * Find the next successfully loaded image.
+   */
+  function nextSlide() {
 
-if(slides.length <= 1)
-return;
+    for (let step = 1; step <= slides.length; step++) {
 
+      const index = (current + step) % slides.length;
 
+      if (isLoaded(slides[index])) {
 
-let current = 0;
+        showSlide(index);
+        return;
 
+      }
 
+    }
 
-setInterval(function(){
-
-
-slides[current]
-.classList
-.remove("active");
-
-
-
-current =
-(current + 1) % slides.length;
+  }
 
 
+  /*
+   * Start rotation.
+   */
+  function startSlideshow() {
 
-slides[current]
-.classList
-.add("active");
+    if (slides.length <= 1) return;
+
+    if (timer !== null) return;
+
+    timer = window.setInterval(
+      nextSlide,
+      interval
+    );
+
+  }
 
 
+  /*
+   * Make sure the initial visible slide is actually loaded.
+   */
+  const firstImage = slides[0].querySelector(".home-slide-fg");
 
-},4000);
+  if (isLoaded(slides[0])) {
+
+    showSlide(0);
+
+  } else if (firstImage) {
+
+    firstImage.addEventListener("load", function () {
+      showSlide(0);
+    }, { once: true });
+
+    firstImage.addEventListener("error", function () {
+
+      for (let i = 1; i < slides.length; i++) {
+
+        if (isLoaded(slides[i])) {
+          showSlide(i);
+          break;
+        }
+
+      }
+
+    }, { once: true });
+
+  }
 
 
+  /*
+   * Preload foreground images so that lazy loading
+   * cannot block the slideshow.
+   */
+  slides.forEach(function (slide) {
+
+    const img = slide.querySelector(".home-slide-fg");
+
+    if (img) {
+      img.loading = "eager";
+    }
+
+    const bg = slide.querySelector(".home-slide-bg");
+
+    if (bg) {
+      bg.loading = "eager";
+    }
+
+  });
+
+
+  startSlideshow();
 
 });
-
-
 </script>
