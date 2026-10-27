@@ -147,7 +147,7 @@ calendar: true
           {% when "Safety of Intelligent Vehicle" %}
             <div class="course-tags">
               <span class="course-tag">Science General Education</span>
-              <span class="course-tag">Curriculum Ideology &amp; Politics Model Course</span>
+              <span class="course-tag">Model Course in Ideological and Political Education</span>
             </div>
         
         {% endcase %}
