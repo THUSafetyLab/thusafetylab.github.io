@@ -747,9 +747,9 @@ resources:
   </div>
 
   <div class="metric-card">
-    <div class="metric-value">1,859</div>
-    <div class="metric-title">Safety-critical interactions</div>
-    <div class="metric-note">30 participants and 337 collisions in the unified automation-level evaluation.</div>
+    <div class="metric-value">L3≈L2</div>
+    <div class="metric-title">Unified safety performance</div>
+    <div class="metric-note">L3 had fewer collisions than L2 but more severe injuries when collisions occurred.</div>
   </div>
 </div>
 
@@ -956,17 +956,28 @@ On the numerical dataset, the final model achieved **85.4%** accuracy in predict
       <img
         src="{{ '/assets/img/Research_1/paper_shen_2025_1.jpg' | relative_url }}"
         alt="Simulated highway safety-critical scenarios and experimental procedure"
+        hidden
       >
-      <!-- Video source is set by the gallery script only when its thumbnail is clicked -->
-      <video controls playsinline preload="metadata" hidden></video>
+      <!-- The video is shown first; the gallery script switches to images when their thumbnails are clicked -->
+      <video controls playsinline preload="metadata"
+        src="{{ '/assets/img/Research_1/paper_shen_2025_5.mp4' | relative_url }}"
+        aria-label="Driving-simulator experiment video"></video>
     </div>
 
     <div class="gallery-caption">
-      Simulated highway safety-critical scenarios and experimental procedure
+      Driving-simulator experiment video
     </div>
 
     <div class="gallery-thumbs">
-      <button type="button" class="gallery-thumb active"
+      <button type="button" class="gallery-thumb gallery-thumb-video active"
+        data-type="video"
+        data-src="{{ '/assets/img/Research_1/paper_shen_2025_5.mp4' | relative_url }}"
+        data-caption="Driving-simulator experiment video"
+        aria-label="Play driving-simulator experiment video">
+        <span aria-hidden="true">&#9654; Video</span>
+      </button>
+
+      <button type="button" class="gallery-thumb"
         data-src="{{ '/assets/img/Research_1/paper_shen_2025_1.jpg' | relative_url }}"
         data-caption="Simulated highway safety-critical scenarios and experimental procedure"
         aria-label="Show experimental framework">
@@ -985,14 +996,6 @@ On the numerical dataset, the final model achieved **85.4%** accuracy in predict
         data-caption="Limitations of existing safety evaluation approaches and the proposed unified experimental framework"
         aria-label="Show unified experimental framework">
         <img src="{{ '/assets/img/Research_1/paper_shen_2025.png' | relative_url }}" alt="">
-      </button>
-
-      <button type="button" class="gallery-thumb gallery-thumb-video"
-        data-type="video"
-        data-src="{{ '/assets/img/Research_1/paper_shen_2025_5.mp4' | relative_url }}"
-        data-caption="Driving-simulator experiment video"
-        aria-label="Play driving-simulator experiment video">
-        <span aria-hidden="true">&#9654; Video</span>
       </button>
     </div>
   </aside>
