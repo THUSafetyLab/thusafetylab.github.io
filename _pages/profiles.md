@@ -65,8 +65,8 @@ nav_order: 5
 /* Academic position */
 
 .team-faculty .faculty-role {
-  min-height: 44px;
-  margin: 0 0 12px;
+  min-height: 0;
+  margin: 0 0 10px;
 
   font-size: 0.9rem;
   line-height: 1.5;
@@ -188,23 +188,22 @@ nav_order: 5
 
   <div class="faculty-grid">
 
-    <!-- Professor Zhou Qing -->
+    <!-- Zhou Qing -->
 
     <div class="faculty-card">
 
       <img
         class="faculty-photo"
         src="{{ '/assets/img/professor_zhou.jpg' | relative_url }}"
-        alt="Professor Zhou Qing"
+        alt="Zhou Qing"
       >
 
       <h3 class="faculty-name">
-        Prof. Zhou Qing
+        Zhou Qing
       </h3>
 
       <p class="faculty-role">
-        Professor<br>
-        Tsinghua University
+        Professor
       </p>
 
       <div class="faculty-links">
@@ -226,14 +225,14 @@ nav_order: 5
     </div>
 
 
-    <!-- Associate Researcher Xia Yong -->
+    <!-- Xia Yong -->
 
     <div class="faculty-card">
 
       <img
         class="faculty-photo"
         src="{{ '/assets/img/professor_xia.jpg' | relative_url }}"
-        alt="Associate Researcher Xia Yong"
+        alt="Xia Yong"
       >
 
       <h3 class="faculty-name">
@@ -241,8 +240,7 @@ nav_order: 5
       </h3>
 
       <p class="faculty-role">
-        Associate Researcher<br>
-        Tsinghua University
+        Associate Researcher
       </p>
 
       <div class="faculty-links">
@@ -264,23 +262,22 @@ nav_order: 5
     </div>
 
 
-    <!-- Associate Professor Nie Bingbing -->
+    <!-- Nie Bingbing -->
 
     <div class="faculty-card">
 
       <img
         class="faculty-photo"
         src="{{ '/assets/img/professor_nie.jpg' | relative_url }}"
-        alt="Associate Professor Nie Bingbing"
+        alt="Nie Bingbing"
       >
 
       <h3 class="faculty-name">
-        Assoc. Prof. Nie Bingbing
+        Nie Bingbing
       </h3>
 
       <p class="faculty-role">
-        Associate Professor<br>
-        Tsinghua University
+        Associate Professor
       </p>
 
       <div class="faculty-links">
@@ -382,7 +379,7 @@ nav_order: 5
         leading universities worldwide and in frontline
         positions across industry. Faculty members
         have received Tsinghua University's
-        "Good Teacher and Helpful Friend"
+        "Good Teacher and Helpful Friend" (良师益友)
         recognition on six occasions.
       </li>
 
