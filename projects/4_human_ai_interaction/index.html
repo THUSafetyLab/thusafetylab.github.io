@@ -1,0 +1,766 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Human–AI Interaction and Collaboration | Intelligent Safety Lab </title> <meta name="author" content=" "> <meta name="description" content="Understanding driver perception, intervention, reliance and social norms to support safer and more compatible human–AI collaboration."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 1180px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://thusafetylab.github.io/projects/4_human_ai_interaction/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Intelligent Safety Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Research/">Research Areas </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Courses </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">Awards </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">Team </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Human–AI Interaction and Collaboration</h1> <p class="post-description">Understanding driver perception, intervention, reliance and social norms to support safer and more compatible human–AI collaboration.</p> </header> <article> <style>
+.post-header,
+.post-description {
+  display: none !important;
+}
+
+.research-detail-page {
+  --rd-purple: #5b21b6;
+  --rd-purple-dark: #351063;
+  --rd-purple-soft: #f4efff;
+  --rd-purple-line: #ded2f6;
+  --rd-text: #202033;
+  --rd-muted: #67677a;
+  --rd-border: #e7e4ee;
+  --rd-card: #ffffff;
+  color: var(--rd-text);
+}
+
+.research-detail-page a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Hero */
+.research-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 430px;
+  margin: 10px 0 22px;
+  border: 1px solid var(--rd-border);
+  border-radius: 22px;
+  background: #fff;
+  /* 背景图透明度：0 = 完全透明，1 = 完全不透明 */
+  --hero-img-opacity: 1;
+}
+
+/* 背景图层 */
+.research-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("/assets/img/Research_4/Human-AI.jpg") center / cover no-repeat;
+  opacity: var(--hero-img-opacity);
+}
+
+/* 白色渐变遮罩层（保证左侧文字清晰） */
+.research-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.99) 0%,
+    rgba(255,255,255,0.97) 40%,
+    rgba(255,255,255,0.72) 62%,
+    rgba(255,255,255,0.10) 100%);
+}
+
+.research-hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(68%, 760px);
+  padding: 66px 58px 58px;
+}
+
+.research-eyebrow {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--rd-purple);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-hero h1 {
+  margin: 0 0 20px;
+  color: var(--rd-purple-dark);
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 750;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.research-hero p {
+  max-width: 720px;
+  margin: 0;
+  color: #3d3d4c;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.research-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.research-flow span {
+  padding: 8px 12px;
+  border: 1px solid rgba(91,33,182,0.18);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.84);
+  color: var(--rd-purple-dark);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+/* Metrics */
+.research-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 22px;
+}
+
+.metric-card {
+  min-height: 118px;
+  padding: 22px 24px;
+  border: 1px solid var(--rd-border);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff 0%, #f7f3ff 100%);
+  box-shadow: 0 6px 22px rgba(42, 24, 72, 0.045);
+}
+
+.metric-value {
+  margin-bottom: 5px;
+  color: var(--rd-purple);
+  font-size: 29px;
+  font-weight: 780;
+  line-height: 1;
+}
+
+.metric-title {
+  margin-bottom: 5px;
+  color: var(--rd-text);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.metric-note {
+  color: var(--rd-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Sticky local navigation */
+.research-subnav {
+  position: sticky;
+  top: 66px;
+  z-index: 20;
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  margin: 0 0 42px;
+  padding: 0 4px;
+  border-bottom: 1px solid var(--rd-border);
+  background: var(--global-bg-color, #fff);
+  scrollbar-width: none;
+}
+
+.research-subnav::-webkit-scrollbar {
+  display: none;
+}
+
+.research-subnav a {
+  flex: 0 0 auto;
+  padding: 15px 16px 13px;
+  border-bottom: 2px solid transparent;
+  color: var(--rd-muted) !important;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none !important;
+}
+
+.research-subnav a:hover {
+  border-bottom-color: var(--rd-purple);
+  color: var(--rd-purple) !important;
+}
+
+/* Overview */
+.research-overview {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1.68fr);
+  gap: 42px;
+  align-items: start;
+  margin-bottom: 72px;
+  padding: 10px 0 48px;
+  border-bottom: 1px solid var(--rd-border);
+}
+
+.overview-title {
+  position: sticky;
+  top: 128px;
+}
+
+.overview-kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--rd-purple);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.overview-title h2,
+.resources-section h2 {
+  margin: 0;
+  color: var(--rd-text);
+  font-size: 32px;
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.overview-content {
+  min-width: 0;
+}
+
+.overview-objective {
+  margin: 0 0 20px;
+  padding: 22px 24px;
+  border: 1px solid var(--rd-purple-line);
+  border-left: 4px solid var(--rd-purple);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #faf7ff 0%, var(--rd-purple-soft) 100%);
+  color: #393345;
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.overview-content p {
+  max-width: 900px;
+  margin: 0;
+  color: var(--rd-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Research sections */
+.research-section {
+  scroll-margin-top: 120px;
+  margin: 0 0 74px;
+  padding-top: 8px;
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 26px;
+}
+
+.section-number {
+  color: var(--rd-purple);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  line-height: 0.95;
+}
+
+.section-heading h2 {
+  margin: 0 0 7px;
+  color: var(--rd-text);
+  font-size: 28px;
+  font-weight: 750;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+.section-heading h2 a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.section-lead {
+  margin: 0;
+  color: var(--rd-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.section-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+.section-stats span {
+  padding: 6px 10px;
+  border: 1px solid var(--rd-purple-line);
+  border-radius: 999px;
+  background: var(--rd-purple-soft);
+  color: var(--rd-purple-dark);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.research-section h3 {
+  margin: 30px 0 13px;
+  color: var(--rd-purple-dark);
+  font-size: 19px;
+  font-weight: 730;
+}
+
+.research-section p,
+.research-section li {
+  color: var(--rd-muted);
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.research-section > p {
+  max-width: 980px;
+}
+
+.research-section strong {
+  color: var(--rd-text);
+}
+
+.research-section .row {
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+.research-section figure,
+.research-section img {
+  border-radius: 12px;
+}
+
+.research-section .z-depth-1 {
+  box-shadow: 0 8px 24px rgba(33, 25, 48, 0.08) !important;
+}
+
+.research-section .caption {
+  margin-top: 9px !important;
+  color: #858394;
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.research-section img[src$=".gif"] {
+  border: 1px solid var(--rd-border);
+  background: #fff;
+}
+
+
+/* =========================================================
+   Paper layout: compact image gallery + text
+   ========================================================= */
+
+.paper-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: 38px;
+  align-items: start;
+  margin-top: 24px;
+}
+
+.paper-layout.gallery-right {
+  grid-template-columns: minmax(0, 1.22fr) minmax(280px, 0.78fr);
+}
+
+.paper-layout.gallery-right .paper-gallery {
+  order: 2;
+  justify-self: end;
+}
+
+.paper-layout.gallery-right .paper-copy {
+  order: 1;
+}
+
+.paper-copy {
+  min-width: 0;
+}
+
+.paper-copy h3:first-child {
+  margin-top: 0;
+}
+
+/* Gallery stays compact and follows the text while reading */
+.paper-gallery {
+  width: 100%;
+  max-width: 430px;
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+.gallery-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 12px;
+  overflow: hidden;
+  border: 1px solid var(--rd-border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(33, 25, 48, 0.06);
+}
+
+.gallery-main img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.gallery-caption {
+  min-height: 38px;
+  margin: 9px 2px 10px;
+  color: #858394;
+  font-size: 11.5px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 1px 5px;
+  scrollbar-width: thin;
+}
+
+.gallery-thumb {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 54px;
+  padding: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--rd-border);
+  border-radius: 8px;
+  background: #fff;
+  opacity: 0.72;
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.gallery-thumb:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.gallery-thumb.active {
+  opacity: 1;
+  border-color: var(--rd-purple);
+  box-shadow: 0 0 0 2px rgba(91, 33, 182, 0.10);
+}
+
+.gallery-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+
+/* Narrow table used only for the automation-level safety-benefit result */
+.safety-benefit-table {
+  width: min(100%, 680px);
+  margin: 16px auto 24px;
+}
+
+.safety-benefit-table table {
+  width: 100% !important;
+  margin: 0 !important;
+  font-size: 12.8px;
+}
+
+.safety-benefit-table th,
+.safety-benefit-table td {
+  padding: 9px 10px !important;
+}
+
+.safety-benefit-table th:first-child,
+.safety-benefit-table td:first-child {
+  white-space: nowrap;
+}
+
+/* Tablet/mobile */
+@media (max-width: 900px) {
+  .paper-layout,
+  .paper-layout.gallery-right {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .paper-layout.gallery-right .paper-gallery,
+  .paper-layout.gallery-right .paper-copy {
+    order: initial;
+  }
+
+  .paper-gallery {
+    position: static;
+    max-width: 620px;
+    justify-self: center !important;
+  }
+
+  .gallery-main {
+    height: 340px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-main {
+    height: 250px;
+  }
+
+  .gallery-thumb {
+    flex-basis: 64px;
+    width: 64px;
+    height: 48px;
+  }
+
+  .safety-benefit-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .safety-benefit-table table {
+    min-width: 600px;
+  }
+}
+
+
+/* Tables */
+.research-detail-page table {
+  width: 100%;
+  margin: 18px 0 26px;
+  overflow: hidden;
+  border: 1px solid var(--rd-border);
+  border-radius: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  font-size: 14px;
+}
+
+.research-detail-page thead th,
+.research-detail-page th {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--rd-border);
+  background: #f5f1fc;
+  color: var(--rd-purple-dark);
+  font-weight: 700;
+}
+
+.research-detail-page td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #efedf3;
+  color: var(--rd-muted);
+  vertical-align: top;
+}
+
+.research-detail-page tr:last-child td {
+  border-bottom: none;
+}
+
+/* Resources */
+.resources-section {
+  scroll-margin-top: 120px;
+  margin-top: 34px;
+  padding-top: 42px;
+  border-top: 1px solid var(--rd-border);
+}
+
+.resources-intro {
+  margin-bottom: 22px;
+  color: var(--rd-muted);
+}
+
+.resources-section table td:first-child {
+  width: 78%;
+}
+
+.resources-section table td:last-child {
+  width: 22%;
+  text-align: center;
+}
+
+.resources-section table a {
+  font-weight: 620;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .research-hero {
+    min-height: 0;
+  }
+
+  .research-hero::after {
+    background: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.95));
+  }
+
+  .research-hero-inner {
+    width: 100%;
+    padding: 46px 32px;
+  }
+
+  .research-metrics,
+  .research-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-title {
+    position: static;
+  }
+
+  .research-subnav {
+    top: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .research-hero {
+    border-radius: 14px;
+  }
+
+  .research-hero-inner {
+    padding: 38px 22px;
+  }
+
+  .research-hero h1 {
+    font-size: 38px;
+  }
+
+  .research-hero p {
+    font-size: 16px;
+  }
+
+  .research-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .section-number {
+    font-size: 42px;
+  }
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+
+  .research-detail-page table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Keep this page's resource table spacing consistent with its reference layout. */
+.research-detail-page .resources-section table th,
+.research-detail-page .resources-section table td {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-top: 0;
+}
+
+/* Compact study entries keep the result and its comparison visible together. */
+.research-hero { min-height: 360px; }
+.research-hero-inner { padding: 48px 48px 44px; }
+.research-hero h1 { font-size: clamp(38px,5vw,58px); }
+.research-hero p { font-size: 17px; line-height: 1.65; }
+.research-overview { margin-bottom: 38px; padding-bottom: 28px; }
+.research-section.compact-paper { margin-bottom: 24px; padding-bottom: 22px; border-bottom: 1px solid var(--rd-border); }
+.compact-paper .section-heading { margin-bottom: 16px; gap: 16px; }
+.compact-paper .section-heading h2 { font-size: 25px; margin-bottom: 6px; }
+.paper-context { color: var(--rd-purple); font-size: 12px; font-weight: 700; margin-bottom: 7px; letter-spacing: .02em; }
+.compact-paper .section-stats { margin-top: 9px; }
+.compact-paper .paper-layout { margin-top: 0; gap: 30px; grid-template-columns: minmax(230px,.72fr) minmax(0,1.28fr); }
+.compact-paper .paper-layout.gallery-right { grid-template-columns: minmax(0,1.28fr) minmax(230px,.72fr); }
+.compact-paper .paper-gallery { max-width: 380px; position: static; }
+.compact-paper .gallery-main { height: 180px; padding: 8px; }
+.compact-paper .gallery-caption { min-height: 0; margin: 6px 2px; font-size: 10.5px; line-height: 1.35; }
+.compact-paper .gallery-thumb { flex-basis: 56px; width: 56px; height: 40px; }
+.compact-paper .paper-copy p { margin: 0 0 12px; font-size: 15px; line-height: 1.72; }
+.compact-paper .paper-reference { font-size: 12px; color: var(--rd-muted); margin-top: 12px; }
+.publication-status { font-size: 11px; padding: 3px 7px; border: 1px solid var(--rd-purple-line); border-radius: 5px; color: var(--rd-purple); white-space: nowrap; vertical-align: middle; }
+.pedestrian-summary { scroll-margin-top: 120px; margin: 8px 0 36px; padding: 25px 28px; border: 1px solid var(--rd-purple-line); border-left: 4px solid var(--rd-purple); border-radius: 12px; background: #faf8ff; }
+.pedestrian-summary h2 { font-size: 25px; font-weight: 750; color: var(--rd-purple-dark); margin: 0 0 12px; }
+.pedestrian-summary p { font-size: 15px; line-height: 1.75; color: var(--rd-muted); margin: 0; }
+.pedestrian-summary strong { color: var(--rd-text); }
+.pedestrian-summary a { font-weight: 650; }
+.resources-section { margin-top: 24px; padding-top: 28px; }
+.resources-section h2 { margin-bottom: 18px; }
+.research-detail-page .resources-section table td { font-size: 13px; line-height: 1.5; }
+@media (max-width: 900px) {
+  .compact-paper .paper-layout, .compact-paper .paper-layout.gallery-right { grid-template-columns: 1fr; gap: 18px; }
+  .compact-paper .paper-gallery { max-width: 620px; }
+  .compact-paper .gallery-main { height: 270px; }
+}
+@media (max-width: 640px) {
+  .research-hero-inner { padding: 34px 26px; }
+  .compact-paper .section-heading h2 { font-size: 23px; }
+  .compact-paper .gallery-main { height: 220px; }
+  .pedestrian-summary { padding: 21px; }
+  .pedestrian-summary h2 { font-size: 23px; }
+}
+
+/* Four study metrics, with a compact responsive layout. */
+.research-metrics { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.metric-card { padding: 21px 20px; }
+@media (max-width:1100px) { .research-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:640px) { .research-metrics { grid-template-columns:1fr; } }
+</style> <div class="research-detail-page"> <section class="research-hero" aria-labelledby="human-ai-title"><div class="research-hero-inner"> <div class="research-eyebrow">Human-centered intelligent systems research</div> <h1 id="human-ai-title">Human–AI Interaction and Collaboration</h1> <p>Safe and effective intelligent systems depend on how people perceive hazards, intervene, learn when to rely on automation, and coordinate with AI. Our research combines driver-in-the-loop experiments, probabilistic response modeling, repeated human–AI decision tasks and social-norm learning to understand these interactions and support human-centered design.</p> <div class="research-flow"> <span>Social norms</span><span>Reliance calibration</span><span>Driver intervention</span><span>Hazard perception</span> </div> </div></section> <div class="research-metrics"> <div class="metric-card" data-study="social-norms-coordination"> <div class="metric-value">Social norms</div> <div class="metric-title">Compatible human–AI coordination</div> <div class="metric-note">Understanding shared expectations in dynamic interactions.</div> </div> <div class="metric-card" data-study="llm-collaboration-learning"> <div class="metric-value">AI reliance</div> <div class="metric-title">Learning when to rely on AI</div> <div class="metric-note">Studying trust and reliance through repeated interaction.</div> </div> <div class="metric-card" data-study="driver-automation-safety"> <div class="metric-value">~26%</div> <div class="metric-title">Collision risk after intervention begins</div> <div class="metric-note">Conditional on driver intervention in L2–L4 safety-critical simulator events.</div> </div> <div class="metric-card" data-study="hazard-perception-response"> <div class="metric-value">9,512</div> <div class="metric-title">Valid driver-response observations</div> <div class="metric-note">Repeated observations from six experienced drivers across 1,740 pre-crash videos.</div> </div> </div> <nav class="research-subnav" aria-label="Human–AI interaction page sections"><a href="#overview">Overview</a><a href="#social-norms-coordination">Social Coordination</a><a href="#llm-collaboration-learning">Human–AI Learning</a><a href="#driver-automation-safety">Driver–Automation Safety</a><a href="#hazard-perception-response">Perception &amp; Response</a><a href="#publications-data">Publications &amp; Resources</a></nav> <section id="overview" class="research-overview"><div class="overview-title"> <span class="overview-kicker">Research framework</span><h2>Objective</h2> </div> <div class="overview-content"><div class="overview-objective"> <strong>Understand how human behavior and AI capability jointly shape safety and collaboration.</strong> We examine when drivers can respond effectively, how people learn the limits of AI advice, and which social expectations enable compatible interaction. These complementary studies connect human behavioral evidence with system evaluation and decision design.</div></div></section> <section id="social-norms-coordination" class="research-section compact-paper"> <div class="section-heading"> <div class="section-number">01</div> <div> <div class="paper-context">Socially compatible AI · Unpublished manuscript</div> <h2>Social norms for compatible human–AI coordination</h2> </div> </div> <div class="paper-copy"><p>We study how AI agents can coordinate with people in dynamic interactions, using pedestrian–vehicle encounters as a representative setting. This work examines how shared social expectations can be represented and incorporated into decision-making to support safe, predictable and mutually compatible behavior. The research aims to inform the design of intelligent agents that interact naturally with people.</p></div> </section> <section id="llm-collaboration-learning" class="research-section compact-paper"> <div class="section-heading"> <div class="section-number">02</div> <div> <div class="paper-context">Human–AI learning · Research in progress</div> <h2>Learning to collaborate with LLMs under time pressure</h2> </div> </div> <div class="paper-copy"><p>This ongoing project examines how people learn when to rely on AI advice under time pressure. Through repeated decision tasks, we investigate how interaction experience and perceived AI capability shape trust and reliance. The goal is to support collaboration in which human expectations remain aligned with the system’s capabilities and limitations.</p></div> </section> <section id="driver-automation-safety" class="research-section compact-paper"> <div class="section-heading"> <div class="section-number">03</div> <div> <div class="paper-context">Driver–automation interaction · AAP 2026</div> <h2><a href="https://doi.org/10.1016/j.aap.2026.108610" target="_blank" rel="noopener">Driver intervention and automation safety boundaries</a></h2> <div class="section-stats"> <span>44 drivers · 2,582 simulator events</span><span>~26% collision risk conditional on intervention</span> </div> </div> </div> <div class="paper-layout gallery-right"> <aside class="paper-gallery" data-gallery="compact-3"> <div class="gallery-main"><img src="/assets/img/Research_4/paper_qin_2026_interaction_framework.png" alt="Simulator-based interaction data collection and safety evaluation across automation levels (Fig. 1d–e)."></div> <div class="gallery-caption">Simulator-based interaction data collection and safety evaluation across automation levels (Fig. 1d–e).</div> <div class="gallery-thumbs"> <button type="button" class="gallery-thumb active" data-src="/assets/img/Research_4/paper_qin_2026_interaction_framework.png" data-caption="Simulator-based interaction data collection and safety evaluation across automation levels (Fig. 1d–e)." aria-label="Show Simulator-based interaction data collection and safety evaluation across automation levels (Fig. 1d–e)."><img src="/assets/img/Research_4/paper_qin_2026_interaction_framework.png" alt=""></button> <button type="button" class="gallery-thumb" data-src="/assets/img/Research_4/paper_qin_2026_interaction_collision_rates.png" data-caption="Collision rates under human–automation interaction versus system-only control; arrows show absolute reductions in percentage points (Fig. 2)." aria-label="Show Collision rates under human–automation interaction versus system-only control; arrows show absolute reductions in percentage points (Fig. 2)."><img src="/assets/img/Research_4/paper_qin_2026_interaction_collision_rates.png" alt=""></button> <button type="button" class="gallery-thumb" data-src="/assets/img/Research_4/paper_qin_2026_intervention_residual_risk.png" data-caption="Collision probability conditional on driver intervention remains approximately 26% across L2–L4; error bars show 95% confidence intervals (Fig. 6b)." aria-label="Show Collision probability conditional on driver intervention remains approximately 26% across L2–L4; error bars show 95% confidence intervals (Fig. 6b)."><img src="/assets/img/Research_4/paper_qin_2026_intervention_residual_risk.png" alt=""></button> </div></aside><div class="paper-copy"><p>Automated-driving safety depends on how drivers interact with the system when hazards emerge. A driver-in-the-loop study collected <strong>2,582 safety-critical events from 44 drivers</strong> across L0–L4. As automation capability increased, interventions became less frequent and generally later, while overall safety improved. However, <strong>collision probability conditional on intervention remained approximately 26%</strong> across L2–L4: 26.72%, 26.43% and 25.54%, respectively. Risk at intervention onset and response latency were closely associated with collision outcomes, revealing a broadly similar risk-based controllability boundary across levels. These simulator findings distinguish system capability from realized safety and show why initiating intervention alone does not guarantee successful hazard resolution.</p></div> </div> </section> <section id="hazard-perception-response" class="research-section compact-paper"> <div class="section-heading"> <div class="section-number">04</div> <div> <div class="paper-context">Driver response modeling · IET ITS 2026</div> <h2><a href="https://doi.org/10.1049/itr2.70297" target="_blank" rel="noopener">Hazard perception and probabilistic driver response</a></h2> <div class="section-stats"> <span>1,740 pre-crash videos</span><span>9,512 response observations · 6 drivers</span> </div> </div> </div> <div class="paper-layout"> <aside class="paper-gallery" data-gallery="compact-4"> <div class="gallery-main"><img src="/assets/img/Research_4/paper_qin_2026_prt_framework.png" alt="Four pre-crash scenario groups link visual attention latency and scenario urgency to Bayesian response-time distributions and crash probability (Fig. 1)."></div> <div class="gallery-caption">Four pre-crash scenario groups link visual attention latency and scenario urgency to Bayesian response-time distributions and crash probability (Fig. 1).</div> <div class="gallery-thumbs"> <button type="button" class="gallery-thumb active" data-src="/assets/img/Research_4/paper_qin_2026_prt_framework.png" data-caption="Four pre-crash scenario groups link visual attention latency and scenario urgency to Bayesian response-time distributions and crash probability (Fig. 1)." aria-label="Show Four pre-crash scenario groups link visual attention latency and scenario urgency to Bayesian response-time distributions and crash probability (Fig. 1)."><img src="/assets/img/Research_4/paper_qin_2026_prt_framework.png" alt=""></button> <button type="button" class="gallery-thumb" data-src="/assets/img/Research_4/paper_qin_2026_prt_safety_envelopes.png" data-caption="Two-dimensional crash-risk envelopes for rear-end, opposite-direction, crossing-path and lane-change conflicts, assuming a 0.60 s evasive maneuver (Fig. 7)." aria-label="Show Two-dimensional crash-risk envelopes for rear-end, opposite-direction, crossing-path and lane-change conflicts, assuming a 0.60 s evasive maneuver (Fig. 7)."><img src="/assets/img/Research_4/paper_qin_2026_prt_safety_envelopes.png" alt=""></button> <button type="button" class="gallery-thumb" data-src="/assets/img/Research_4/paper_qin_2026_prt_external_validation.png" data-caption="Preliminary external validation using 35 naturalistic rear-end crash cases; shaded bands show 50% highest-density intervals under two attention-timing assumptions (Fig. 9)." aria-label="Show Preliminary external validation using 35 naturalistic rear-end crash cases; shaded bands show 50% highest-density intervals under two attention-timing assumptions (Fig. 9)."><img src="/assets/img/Research_4/paper_qin_2026_prt_external_validation.png" alt=""></button> </div></aside><div class="paper-copy"><p>Fixed response-time assumptions overlook how attention and urgency jointly shape a driver’s ability to avoid a collision. Using <strong>1,740 pre-crash videos and 9,512 valid response observations from six experienced drivers</strong>, this study develops a Bayesian framework for perception-response time (PRT) across four conflict types. Visual attention latency and scenario urgency condition long-tailed PRT distributions, which yield <strong>scenario-specific crash-risk safety envelopes</strong>. A comparison with <strong>35 naturalistic rear-end crash cases</strong> provides preliminary external support. The framework offers a basis for driver-state-aware warning and intervention timing; broader driver populations and additional conflict types require further validation.</p></div> </div> </section> <section id="publications-data" class="resources-section"><h2>Publications &amp; Resources</h2> <table> <thead><tr> <th>Paper</th> <th>Resource</th> </tr></thead> <tbody> <tr> <td>Yang, Y., Liu, S., et al. <em>Learning social norms enhances compatibility in dynamic human–AI coordination.</em> </td> <td>Unpublished manuscript</td> </tr> <tr> <td> <em>LLM capability shapes how humans learn to collaborate with AI in safety-critical decisions.</em> Research presentation by Jiajie Shen (2026).</td> <td>Research in progress</td> </tr> <tr> <td><a href="https://doi.org/10.1016/j.aap.2026.108610" target="_blank" rel="noopener">Qin, D., et al. (2026). Human–automation interaction shapes safety performance across automation levels in safety–critical scenarios. <em>Accident Analysis &amp; Prevention, 235</em>, 108610.</a></td> <td>Data available on request</td> </tr> <tr> <td><a href="https://doi.org/10.1049/itr2.70297" target="_blank" rel="noopener">Qin, D., et al. (2026). Drivers’ perception-response time across pre-crash scenarios: Bayesian inference with hazard perception and scenario urgency considerations. <em>IET Intelligent Transport Systems, 20</em>, e70297.</a></td> <td><a href="https://github.com/Shun-Gan/PSAD-dataset" target="_blank" rel="noopener">PSAD dataset</a></td> </tr> </tbody> </table></section> <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".paper-gallery").forEach(function (gallery) {
+    const mainImage = gallery.querySelector(".gallery-main img");
+    const caption = gallery.querySelector(".gallery-caption");
+    const thumbs = gallery.querySelectorAll(".gallery-thumb");
+
+    thumbs.forEach(function (thumb) {
+      thumb.addEventListener("click", function () {
+        const nextSrc = thumb.dataset.src;
+        const nextCaption = thumb.dataset.caption || "";
+
+        if (nextSrc) {
+          mainImage.src = nextSrc;
+          mainImage.alt = nextCaption;
+        }
+
+        caption.textContent = nextCaption;
+
+        thumbs.forEach(function (item) {
+          item.classList.remove("active");
+        });
+
+        thumb.classList.add("active");
+      });
+    });
+  });
+});
+</script> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © 2026 Intelligent Safety Laboratory, Tsinghua University. Contact: <a href="mailto:thuacl@163.com">thuacl@163.com</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> </body> </html>
