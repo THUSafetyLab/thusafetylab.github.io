@@ -5,7 +5,7 @@ description: Coordinating collision avoidance and injury mitigation through risk
 img: assets/img/Research_3/research_int_safety.jpg
 permalink: /projects/3_integrated_safety/
 importance: 3
-category: ongoing research
+category: research
 giscus_comments: false
 related_publications: false
 ---
