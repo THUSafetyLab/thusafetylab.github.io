@@ -2,7 +2,7 @@
 layout: page
 title: "Intelligent Pedestrian Safety: Behavior, Modeling, and Injury Prevention"
 description: "The last two seconds before a crash: we measure how pedestrians react, build digital pedestrians with realistic behavior, and design AI-driven integrated safety systems that reduce injury."
-importance: 2
+importance: 3
 category: research
 img: assets/img/Research_2/research_ped.png
 giscus_comments: false
