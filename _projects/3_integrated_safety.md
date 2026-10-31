@@ -741,7 +741,7 @@ related_publications: false
 </style>
 <div class="research-detail-page">
 <section class="research-hero" aria-labelledby="integrated-safety-title"><div class="research-hero-inner">
-<div class="research-eyebrow">Autonomous vehicle safety research</div><h1 id="integrated-safety-title">Integrated Safety</h1>
+<div class="research-eyebrow">Autonomous vehicle safety research</div><h1 id="integrated-safety-title">Integrated Active and Passive Safety</h1>
 <p>Integrated safety coordinates active collision avoidance and passive protection to reduce injuries across the pre-crash and in-crash phases. Our research supports this goal through injury-based driving decisions, human-informed learning with injury-aware evaluation, risk-aware trajectory prediction, and ethical decision-making informed by public moral preferences.</p>
 <div class="research-flow"><span>Injury mitigation</span><span>Injury-based decisions</span><span>Human-informed learning</span><span>Risk-aware prediction</span><span>Ethical decisions</span></div>
 </div></section>
