@@ -891,6 +891,8 @@ Human drivers do not process all visual information equally. Their attention is 
 
 Jointly trained on four public driver-attention datasets — **BDD-A, DADA-2000, DReyeVE, and EyeTrack** — ADA achieved the best performance against state-of-the-art methods across **seven metrics**, and it also reached state-of-the-art performance among ten methods on **PSAD**, which was held out from joint training. With **5.63 M parameters**, it had the lowest average computation per frame among the ten methods. The predicted attention reproduces human perceptual patterns in cruising, following, turning, and crash scenes and can shift toward **latent conflict regions and relevant interacting vehicles**, providing a basis for identifying where human drivers are likely to allocate attention before and during safety-critical events.
 
+<p class="related-study"><strong>Related study:</strong> <a href="https://doi.org/10.1109/THMS.2025.3567611">Qin et al. (IEEE THMS 2025)</a> modeled drivers' perception-response time as visual evidence accumulation; across 864 safety-critical trials from 24 experienced drivers, the model predicted response time more accurately than a fixed-threshold model (MSE 1.15 × 10<sup>−2</sup> vs. 2.99 × 10<sup>−2</sup>), supporting personalized ADAS activation timing.</p>
+
   </div>
 
 </div>
@@ -1176,8 +1178,6 @@ The final dataset comprised 30 valid participants and 1,859 safety-critical vehi
 
 The results show that **a lower collision rate does not necessarily translate into a proportionally higher overall safety benefit**. **Level 3 automation reduced collision occurrence relative to Level 2 but exhibited higher injury severity when collisions occurred, resulting in comparable unified safety benefits**. Level 4 achieved the highest unified safety benefit, mainly because of its lower collision rate, while injury severity once a collision occurred remained similar to that of Level 2.
 
-<p class="related-study"><strong>Related study:</strong> <a href="https://doi.org/10.1109/THMS.2025.3567611">Qin et al. (IEEE THMS 2025)</a> modeled drivers' perception-response time as visual evidence accumulation; across 864 safety-critical trials from 24 experienced drivers, the model predicted response time more accurately than a fixed-threshold model (MSE 1.15 × 10<sup>−2</sup> vs. 2.99 × 10<sup>−2</sup>), supporting personalized ADAS activation timing.</p>
-
   </div>
 
 </div>
@@ -1192,11 +1192,11 @@ The results show that **a lower collision rate does not necessarily translate in
 | Paper | Data & Code |
 | :--- | :---: |
 | [**Gan, S., et al.** (2022). Multisource Adaption for Driver Attention Prediction in Arbitrary Driving Scenes. *IEEE Transactions on Intelligent Transportation Systems, 23*(11), 20912–20925. https://doi.org/10.1109/TITS.2022.3177640](https://doi.org/10.1109/TITS.2022.3177640) | {% if page.resources.ada_code and page.resources.ada_code != "" %}[ADA code]({{ page.resources.ada_code }}){% else %}ADA code{% endif %} |
+| [**Qin, D., et al.** (2025). When do drivers maneuver: Experimental investigation and inference of perception-response time for tailored safety systems in intelligent vehicles. *IEEE Transactions on Human-Machine Systems, 55*(4), 609–618. https://doi.org/10.1109/THMS.2025.3567611](https://doi.org/10.1109/THMS.2025.3567611) | Data available on request |
 | [**Lu, T., et al.** (2025). A physics-informed attention model for integrated driving risk assessment. *Accident Analysis & Prevention, 223*, 108266. https://doi.org/10.1016/j.aap.2025.108266](https://doi.org/10.1016/j.aap.2025.108266) | Data available on request |
 | [**Wang, Q., et al.** (2021). A data-driven, kinematic feature-based, near real-time algorithm for injury severity prediction of vehicle occupants. *Accident Analysis & Prevention, 156*, 106149. https://doi.org/10.1016/j.aap.2021.106149](https://doi.org/10.1016/j.aap.2021.106149) | {% if page.resources.vehicle_crash_database and page.resources.vehicle_crash_database != "" %}[Vehicle-crash dataset]({{ page.resources.vehicle_crash_database }}){% else %}Vehicle-crash dataset{% endif %} |
 | [**Lu, T., et al.** (2026). A knowledge-guided multi-fidelity residual learning framework for occupant injury prediction from crash simulations. *Advanced Engineering Informatics, 76*, 105117. https://doi.org/10.1016/j.aei.2026.105117](https://doi.org/10.1016/j.aei.2026.105117) | Data available on request |
-| [**Shen, J., et al.** (2025). A unified experimental framework for estimating collision rates and occupant injury severity across different levels of driving automation. *Accident Analysis & Prevention, 223*, 108273. https://doi.org/10.1016/j.aap.2025.108273](https://doi.org/10.1016/j.aap.2025.108273) | {% if page.resources.experimental_dataset and page.resources.experimental_dataset != "" %}[Experimental dataset]({{ page.resources.experimental_dataset }}){% else %}Experimental dataset (release in preparation){% endif %} |
-| [**Qin, D., et al.** (2025). When do drivers maneuver: Experimental investigation and inference of perception-response time for tailored safety systems in intelligent vehicles. *IEEE Transactions on Human-Machine Systems, 55*(4), 609–618. https://doi.org/10.1109/THMS.2025.3567611](https://doi.org/10.1109/THMS.2025.3567611) | — |
+| [**Shen, J., et al.** (2025). A unified experimental framework for estimating collision rates and occupant injury severity across different levels of driving automation. *Accident Analysis & Prevention, 223*, 108273. https://doi.org/10.1016/j.aap.2025.108273](https://doi.org/10.1016/j.aap.2025.108273) | {% if page.resources.experimental_dataset and page.resources.experimental_dataset != "" %}[Experimental dataset]({{ page.resources.experimental_dataset }}){% else %}Data available on request{% endif %} |
 
 </section>
 
