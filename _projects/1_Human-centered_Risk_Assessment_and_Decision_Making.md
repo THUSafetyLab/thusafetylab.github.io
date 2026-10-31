@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Human-centered Risk Assessment & Safety Performance Evaluation
+title: Human-centered Risk Assessment & Safety Evaluation
 description: Human-centered methods that model driver attention, quantify integrated driving risk, predict occupant injury severity, and evaluate automated-vehicle safety by both collision occurrence and injury severity.
 importance: 1
 category: research
@@ -742,7 +742,7 @@ resources:
 <section class="research-hero">
   <div class="research-hero-inner">
     <div class="research-eyebrow">Autonomous vehicle safety research</div>
-    <h1>Human-centered Risk Assessment &amp; Safety Performance Evaluation</h1>
+    <h1>Human-centered Risk Assessment &amp; Safety Evaluation</h1>
     <p>
       In safety-critical scenarios, drivers are both the people we protect and the experts we learn from. We model where drivers look, quantify how likely and how severe an emerging collision is, predict occupant injury quickly and with fewer costly simulations, and evaluate automated vehicles by both collision occurrence and injury severity.
     </p>
@@ -776,9 +776,9 @@ resources:
   </div>
 
   <div class="metric-card">
-    <div class="metric-value">17.6%</div>
+    <div class="metric-value">&gt;16%</div>
     <div class="metric-title">Lower injury-prediction error</div>
-    <div class="metric-note">Versus high-fidelity-only learning with 500 cases, by reusing low-fidelity physics priors.</div>
+    <div class="metric-note">Under scarce high-fidelity data, matching baselines trained with 2.5 times more high-fidelity data.</div>
   </div>
 
   <div class="metric-card">
