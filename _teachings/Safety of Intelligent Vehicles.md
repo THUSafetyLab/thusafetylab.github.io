@@ -2,7 +2,7 @@
 layout: course
 title: Safety of Intelligent Vehicles
 description: "This undergraduate general education elective traces the development of automotive safety from passive crash protection to intelligent safety systems. It introduces the scientific foundations, research methods, and emerging challenges of intelligent vehicle safety and future mobility."
-instructor: Bingbing Nie, Hong Wang, Shaobing Xu
+instructor: Bingbing Nie, Shaobing Xu, Hong Wang
 year: 2026
 term: Fall
 course_id: "00150222"
