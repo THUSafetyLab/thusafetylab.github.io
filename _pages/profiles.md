@@ -188,7 +188,7 @@ nav_order: 5
        Faculty Members
        ========================================== -->
 
-  <h2 class="faculty-heading">Faculty members of Automotive Crash Laboratory</h2>
+  <h2 class="faculty-heading">Faculty Members of the Intelligent Safety Lab</h2>
 
   <div class="faculty-grid">
 
@@ -244,7 +244,7 @@ nav_order: 5
       </h3>
 
       <p class="faculty-role">
-        Associate Researcher
+        Associate Research Fellow
       </p>
 
       <div class="faculty-links">
@@ -315,17 +315,16 @@ nav_order: 5
 
     <p>
       The Automotive Safety and Lightweighting Research Team
-      is academically led by
+      is led by
       <strong>Professor Zhou Qing</strong>,
       with
-      <strong>Associate Researcher Xia Yong</strong>
+      <strong>Associate Research Fellow Xia Yong</strong>
       and
       <strong>Associate Professor Nie Bingbing</strong>
-      jointly contributing to its academic supervision.
-      The faculty members have long been actively engaged
-      in research and education, and have established
-      distinguished academic influence in the field of
-      automotive safety both in China and internationally.
+      sharing responsibility for research and student mentoring.
+      Together, they bring extensive experience in research
+      and education and have contributed to advances in
+      automotive safety in China and internationally.
     </p>
 
     <ul>
@@ -337,26 +336,28 @@ nav_order: 5
         Science Foundation of China, national key research
         and development programs, and international
         collaborative initiatives. The team has published
-        over 100 high-quality academic papers and obtained
-        nearly 100 granted invention patents in China and
-        the United States. It has established long-term,
-        stable collaborations with leading companies in
-        the automotive industry, both domestically and
-        internationally. Some of its core technologies
-        have achieved internationally leading performance
-        and have been implemented in mass production.
+        more than 100 research papers and been granted
+        nearly 100 invention patents in China and
+        the United States. Long-term collaborations with
+        leading automotive companies in China and abroad
+        help translate research into industrial applications.
+        Some of the team's core technologies have achieved
+        internationally leading performance and have been
+        adopted in mass production.
       </li>
 
       <li>
-        <strong>Academic leadership and influence.</strong>
-        Faculty members have held prominent academic
-        positions, including Council Member of the
+        <strong>Academic leadership and service.</strong>
+        Faculty members have served in leadership and
+        advisory roles in international professional
+        organizations and at Tsinghua University. These
+        include service on the Council of the
         International Research Council on Biomechanics of
-        Injury (IRCOBI), with the first Chinese scholar
-        to serve in this capacity; head of the Pedestrian
-        Safety Division of SAE International; Member of
-        the Academic Committee of Tsinghua University;
-        and Chair of the School Academic Committee.
+        Injury (IRCOBI), where a team member became the first
+        Chinese scholar to serve; leadership of SAE International's
+        Pedestrian Safety Division; membership of Tsinghua
+        University's Academic Committee; and chairing the
+        School Academic Committee.
         They have also served as associate editors or
         editorial board members of internationally
         recognized journals, including
@@ -368,23 +369,24 @@ nav_order: 5
 
       <li>
         <strong>Education and mentoring.</strong>
-        Faculty members teach a series of foundational
-        courses on automotive crash safety. Their teaching
-        achievements include recognition as one of the
-        inaugural National First-Class Undergraduate
-        Courses by the Ministry of Education of China,
-        with enrollment exceeding 47,000 students;
-        recognition for high-quality undergraduate
-        teaching plans among Beijing universities;
-        designation as Tsinghua University Excellent
-        Courses; and recognition as Model Courses for
-        Curriculum-Based Ideological and Political
-        Education. Graduates have pursued careers at
-        leading universities worldwide and in frontline
-        positions across industry. Faculty members
-        have received Tsinghua University's
-        "Good Teacher and Helpful Friend" (良师益友)
-        recognition on six occasions.
+        Faculty members teach foundational courses in
+        automotive crash safety. One of these courses was
+        selected for the inaugural group of National
+        First-Class Undergraduate Courses by China's
+        Ministry of Education and has enrolled more than
+        47,000 students. Other distinctions include
+        recognition for excellence in undergraduate
+        teaching plans among Beijing universities,
+        designation as Tsinghua University Courses of
+        Excellence, and recognition as Demonstration
+        Courses in Moral and Values Education, which
+        integrate ethical reflection and social responsibility
+        into technical education. Graduates have gone on
+        to careers at leading universities worldwide and
+        in industry. Faculty members have received
+        Tsinghua University's "Outstanding Mentor and Friend"
+        Award on six occasions, recognizing their guidance
+        and support for students.
       </li>
 
     </ul>
