@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Safety of Intelligent Vehicles
-description: "This undergraduate general education elective examines the evolution of automotive safety from passive protection to intelligent safety. It introduces fundamental theories, research methods, current research topics, and future directions in intelligent vehicle and mobility safety."
+description: "This undergraduate general education elective traces the development of automotive safety from passive crash protection to intelligent safety systems. It introduces the scientific foundations, research methods, and emerging challenges of intelligent vehicle safety and future mobility."
 instructor: Bingbing Nie, Hong Wang, Shaobing Xu
 year: 2026
 term: Fall
@@ -10,62 +10,62 @@ course_id: "00150222"
 syllabus:
   - week: 1
     topic: Introduction
-    description: Course information; road traffic and intelligent vehicles; the meanings of intelligent vehicle safety; and the research subjects, methods, trends, and classic cases of automotive safety.
+    description: An introduction to the course, road traffic, and intelligent vehicles; the scope of intelligent vehicle safety; and key research questions, methods, trends, and case studies in automotive safety.
 
   - week: 2
     topic: Overview of Automotive Safety
-    description: An introduction to active and passive safety through specific vehicle safety issues.
+    description: An introduction to active and passive safety through practical examples of vehicle safety challenges.
 
   - week: 3
     topic: Occupant Restraint Systems
-    description: Basic concepts of automotive occupant restraint systems, simplified analysis of the collision process, and restraint system design principles.
+    description: Fundamentals of occupant restraint systems, simplified analysis of crash dynamics, and principles of restraint system design.
 
   - week: 4
     topic: Research Methods in Automotive Safety
-    description: Experimental methods, numerical methods, human surrogates, and a discussion of active occupant response.
+    description: Experimental and numerical methods, human surrogates for safety research, and the role of active occupant responses in vehicle safety.
 
   - week: 5
-    topic: "Field Study: Mobility on the Production Line"
+    topic: "Field Visit: Intelligent Mobility in Practice"
     description: An off-campus field study, tentatively planned in Yizhuang with Luobo Chuxing, Baidu, or Qingzhou Chuxing.
 
   - week: 6
-    topic: Behavioral Characteristics of Traffic Participants
-    description: An introduction to diverse road users and intelligent cockpits, with a discussion of travel preferences.
+    topic: Road User Behavior
+    description: An introduction to different road user groups and intelligent vehicle cockpits, with a discussion of travel preferences.
 
   - week: 7
     topic: Electric Vehicle Safety
-    description: A guest lecture on the characteristics and safety categories of electric vehicles, as well as battery crash safety and protection.
+    description: A guest lecture on electric vehicle technologies and key safety concerns, including battery crash safety and protective measures.
 
   - week: 8
     topic: Thermal Runaway Protection for Electric Vehicles
-    description: A case-based discussion covering electric vehicles and their accident characteristics, thermal runaway protection for traction batteries, and risk prediction associated with battery damage.
+    description: Case studies of electric vehicle incidents, thermal runaway protection for traction batteries, and prediction of safety risks following battery damage.
 
   - week: 9
     topic: Operational Safety of Intelligent Vehicles
-    description: Operational safety theory, risk identification and quantitative assessment, and safety decision-making and control.
+    description: Foundations of operational safety, hazard identification, quantitative risk assessment, and decision-making and control for safe vehicle operation.
 
   - week: 10
     topic: Intelligent Vehicle System Safety
-    description: Fundamental concepts of intelligent vehicles, functional safety, safety of the intended functionality, information security, and a discussion of the relationship between artificial intelligence and intelligent vehicles.
+    description: Fundamentals of intelligent vehicles, functional safety, safety of the intended functionality, information security, and the role of artificial intelligence in intelligent vehicle systems.
 
   - week: 11
     topic: Automotive Safety Testing and Evaluation
-    description: Test scenarios and tools, regulations and consumer-oriented assessment methods, and a discussion of safety testing in the context of ongoing transformations in the automotive industry.
+    description: Test scenarios and tools, safety regulations, consumer safety assessment methods, and the implications of changes in the automotive industry for safety testing.
 
   - week: 12
-    topic: Experiential Laboratory Class
+    topic: Immersive Laboratory Session
     description: Immersive interaction in hazardous traffic scenarios.
 
   - week: 13
     topic: Automotive Safety and Future Mobility
-    description: A seminar exploring future safety under intelligent connectivity and vehicle-road coordination, the development of intelligent protection, and the relationship among intelligent vehicles, smart transportation, and future cities.
+    description: A seminar on safety in connected and automated mobility, cooperation between vehicles and road infrastructure, advances in intelligent protection, and the role of intelligent vehicles in future transport systems and cities.
 
   - week: 14
     topic: Automotive Safety and Future Society
-    description: A seminar examining whether road traffic crashes will always exist and the ethical dilemmas underlying autonomous vehicle decision-making.
+    description: A seminar examining whether road traffic crashes can ever be eliminated and the ethical dilemmas in autonomous vehicle decision-making.
 
   - week: 15
-    topic: Course Project Presentation
+    topic: Course Project Presentations
     description: Group presentations and instructor feedback on the course projects.
 ---
 
@@ -225,13 +225,13 @@ syllabus:
 
 <section class="course-hero">
 <div class="course-hero-text">
-<div class="course-tags"><span>Science General Education</span><span>High-Quality General Education Course Development Initiative</span><span>Model Course in Ideological and Political Education</span></div>
+<div class="course-tags"><span>General Education in Science</span><span>General Education Course Excellence Initiative</span><span>Demonstration Course in Moral and Values Education</span></div>
 <dl class="course-facts">
 <div><dt>Instructors</dt><dd>{{ page.instructor }}</dd></div>
 <div><dt>Term</dt><dd>{{ page.term }}</dd></div>
 <div><dt>Course No.</dt><dd>{{ page.course_id }}</dd></div>
 <div><dt>Duration</dt><dd>{{ page.syllabus.size }} weeks</dd></div>
-<div class="wide"><dt>Format</dt><dd>Lectures, field study, laboratory experience, seminars, and a group course project</dd></div>
+<div class="wide"><dt>Format</dt><dd>Lectures, a field visit, laboratory activities, seminars, and a group project</dd></div>
 </dl>
 </div>
 </section>
@@ -240,15 +240,15 @@ syllabus:
 <h2>Course Overview</h2>
 <div class="course-overview">
 <div class="course-overview-text">
-<p>This course introduces the fundamental theories, research topics, and future trends of intelligent vehicle safety. Through this course, students are expected to understand how vehicle safety technologies affect human life, build a knowledge framework for future transportation safety, appreciate the value of science, technology, and industry, and develop the courage and ability to create and take responsibility. Course content includes:</p>
+<p>This course introduces the scientific foundations, current research, and future directions of intelligent vehicle safety. Students explore how safety technologies protect lives and shape future mobility, while building a foundation for understanding transportation safety. The course also examines the contributions of science, technology, and industry to society and encourages students to develop the confidence and skills to innovate responsibly. Course content includes:</p>
 <div class="course-cards">
-<div class="course-card"><h3>Fundamental Theories</h3><p>An overview of automotive safety and occupant restraint systems</p></div>
+<div class="course-card"><h3>Foundations</h3><p>An overview of automotive safety and occupant restraint systems</p></div>
 <div class="course-card"><h3>Future Trends</h3><p>Intelligent vehicles, future mobility, and transportation safety</p></div>
-<div class="course-card full-row"><h3>Research Hotspots</h3><p>Explore our work on intelligent vehicle safety and EV thermal runaway prevention, featuring typical accident case analyses and an overview of our team's latest research</p></div>
+<div class="course-card full-row"><h3>Current Research</h3><p>Our team's research on intelligent vehicle safety and electric vehicle battery thermal runaway prevention, illustrated through incident case studies and recent findings</p></div>
 </div>
 </div>
 <figure class="course-photo">
-<img src="{{ '/assets/img/courses/SIV-1.jpg' | relative_url }}" alt="Classroom photo from Safety of Intelligent Vehicle" loading="lazy">
+<img src="{{ '/assets/img/courses/SIV-1.jpg' | relative_url }}" alt="Classroom photo from Safety of Intelligent Vehicles" loading="lazy">
 <figcaption>Classroom photo</figcaption>
 </figure>
 </div>
@@ -258,7 +258,7 @@ syllabus:
 <h2>Prerequisites</h2>
 <ul class="course-chips">
 <li>No formal prerequisites</li>
-<li>Sophomore standing or above recommended</li>
+<li>Recommended for students in their second year or later</li>
 </ul>
 </section>
 
