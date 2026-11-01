@@ -38,8 +38,8 @@ td {
 
 | Name | Date | Award |
 | --- | --- | --- |
-| Huamu Sun, Jiajie Shen | Jul 2026 | Outstanding Communist Party Member, Tsinghua University |
-| Zijian He | Jul 2026 | Outstanding Student Leader, Tsinghua University |
+| Huamu Sun, Jiajie Shen | 2026 | Outstanding Communist Party Member, Tsinghua University |
+| Zijian He | 2026 | Outstanding Student Leader, Tsinghua University |
 | Yi Yang, Jiajie Shen | 2026 | Third Prize for Oral Presentation, the 817th Tsinghua University Doctoral Academic Forum |
 | Yunhan Li | 2026 | Outstanding Graduate of Hunan Province |
 | Zhixin Zhao | 2026 | Outstanding Undergraduate Thesis (University Level), Tsinghua University; Outstanding Graduate of Beijing Municipality; Outstanding Member of the Communist Youth League, Tsinghua University |
