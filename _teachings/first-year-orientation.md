@@ -2,7 +2,7 @@
 layout: course
 title: First-Year Orientation Course
 description: >-
-  This course is designed primarily for first-year undergraduate students and supports their transition from high school to university through general education, scientific inquiry, and personal development. It is organized around three modules: Me and My University, Me and My Major, and Me and Myself. Through small-group seminars and hands-on experiences, students learn about university life and Tsinghua traditions, explore interdisciplinary research through intelligent vehicle cases, and develop self-awareness, resilience, and a sense of responsibility.
+  Designed primarily for first-year undergraduates, this course supports the transition to university through general education, scientific inquiry, and personal development. Its three modules focus on Finding Your Place at University, Exploring Your Field of Study, and Understanding Yourself. Through small-group seminars and hands-on activities, students discover university life and Tsinghua traditions, explore interdisciplinary research through intelligent vehicle case studies, and develop self-awareness, resilience, and a sense of responsibility.
 instructor: Bingbing Nie, Hong Wang
 year: 2026
 term: Fall
@@ -10,31 +10,31 @@ course_id: 00150241-90
 # Weekly plan rendered by this page (named "syllabus" so the default layout does not add its own schedule table)
 syllabus:
   - week: 1
-    topic: Course Introduction and Icebreaking
-    description: An introduction to the course framework and assessment, followed by personal growth stories, small-group icebreaking activities, and a discussion of students' expectations for university life.
+    topic: Course Introduction and Getting to Know One Another
+    description: An introduction to the course structure and assessment, followed by stories of personal development, small-group icebreaker activities, and a discussion of students' expectations for university life.
 
   - week: 2
-    topic: Peer Experiences and University Life
+    topic: Learning from Upper-Year Students
     description: Invited upper-year students share their experiences of academic study, research and innovation, student leadership, public service, sports, and campus life. The session encourages students to build confidence, explore their interests, and find an approach to university life that suits them.
 
   - week: 3
-    topic: North Gymnasium Visit and Fencing Experience
-    description: Students visit Tsinghua University's North Gymnasium and take part in an introductory fencing experience, learning about campus sports facilities and experiencing physical education beyond the classroom.
+    topic: North Gymnasium Visit and Introduction to Fencing
+    description: Students visit Tsinghua University's North Gymnasium, explore campus sports facilities, and try fencing in an introductory session that brings physical education beyond the classroom.
 
   - week: 4
-    topic: Vehicle Engineering and My Major
-    description: Using vehicle engineering as an example, the session introduces major technological directions, industry and career pathways, the role of automobiles in society, and how research questions emerge from real engineering problems.
+    topic: Exploring Vehicle Engineering and Academic Pathways
+    description: Using vehicle engineering as a case study, the session explores emerging technologies, industry and career pathways, the role of automobiles in society, and how practical engineering problems lead to research questions.
 
   - week: 5
     topic: "AI and Automotive Safety: A Research Case Study"
-    description: A student research case on an AI-enabled active hood for pedestrian protection shows how a project develops from a safety problem and research question to simulation, analysis, and results.
+    description: A student research project on an AI-enabled active hood for pedestrian protection illustrates the research process, from identifying a safety problem and framing a research question to simulation, analysis, and interpretation of results.
 
   - week: 6
-    topic: Intelligent Connected Vehicles
-    description: An introduction to the history, definitions, and levels of intelligent connected vehicles, followed by discussion of their social value, development in China and abroad, and major technical and societal challenges.
+    topic: Intelligent and Connected Vehicles
+    description: An introduction to the development and key concepts of intelligent and connected vehicles and levels of driving automation, followed by discussion of societal benefits, developments in China and internationally, and major technical and social challenges.
 
   - week: 7
-    topic: Reflection, Interaction, and Student Presentations
+    topic: Student Presentations and Reflection
     description: Students present their interests, experiences, or personal reflections in a format of their choice, exchange ideas with classmates and instructors, and reflect on the course and their plans for university life.
 ---
 
@@ -125,6 +125,8 @@ syllabus:
   border-radius: 12px;
   background: #fff;
 }
+/* A card alone in its row spans the full width of the card grid */
+.course-card.full-row { grid-column: 1 / -1; }
 .course-card h3 { margin: 0 0 6px; color: var(--cp-purple-dark); font-size: 16px; font-weight: 700; }
 .course-card p { margin: 0; font-size: 14.5px; line-height: 1.65; }
 
@@ -192,36 +194,30 @@ syllabus:
 
 <section class="course-hero">
 <div class="course-hero-text">
+<div class="course-tags"><span>Tailored for First-Year Students Choosing Courses</span></div>
 <dl class="course-facts">
 <div><dt>Instructors</dt><dd>{{ page.instructor }}</dd></div>
 <div><dt>Term</dt><dd>{{ page.term }}</dd></div>
 <div><dt>Course No.</dt><dd>{{ page.course_id }}</dd></div>
 <div><dt>Credits &amp; Hours</dt><dd>1 credit · 16 hours · {{ page.syllabus.size }} sessions</dd></div>
-<div class="wide"><dt>Format</dt><dd>Small-class seminars combining classroom teaching, experiential learning, peer sharing, and student presentations</dd></div>
+<div class="wide"><dt>Format</dt><dd>Small-group seminars, experiential learning, peer discussion, and student presentations</dd></div>
 </dl>
 </div>
 </section>
 
 <section class="course-section">
 <h2>Course Overview</h2>
-<p>This one-credit course consists of 16 hours delivered across seven sessions. It is conducted in a small-class format and combines classroom instruction with experiential learning, peer sharing, interactive discussion, feedback, and student presentations. The course is organized into three connected modules:</p>
+<p>This one-credit course comprises 16 hours across seven sessions. Small-group teaching combines classroom instruction, experiential learning, peer discussion, feedback, and student presentations. Three connected modules help students navigate university life, explore their academic interests, and reflect on their personal development:</p>
 <div class="course-cards">
-<div class="course-card"><h3>Me and My University</h3><p>Students explore the characteristics of university study and life, learn about Tsinghua's history, traditions, and culture, and build supportive relationships with teachers and peers.</p></div>
-<div class="course-card"><h3>Me and My Major</h3><p>Using intelligent vehicles as an accessible interdisciplinary case, students examine technological development, experience research and industry practice, and learn the basic process of scientific inquiry.</p></div>
-<div class="course-card"><h3>Me and Myself</h3><p>Students reflect on their interests, strengths, values, and goals, strengthen their resilience and emotional adjustment, and consider the responsibilities that accompany scientific and technological development.</p></div>
+<div class="course-card"><h3>Finding Your Place at University</h3><p>Students learn how to navigate university study and campus life, discover Tsinghua's history, traditions, and culture, and build supportive relationships with faculty and peers.</p></div>
+<div class="course-card"><h3>Exploring Your Field of Study</h3><p>Intelligent vehicles provide an accessible introduction to interdisciplinary research. Students explore technological advances, research and industry practice, and the process of scientific inquiry.</p></div>
+<div class="course-card"><h3>Understanding Yourself</h3><p>Students reflect on their interests, strengths, values, and goals, develop resilience and strategies for adapting to university life, and consider the responsibilities associated with scientific and technological progress.</p></div>
 </div>
 </section>
 
 <section class="course-section">
-<h2>Prerequisites</h2>
-<ul class="course-chips">
-<li>Primarily intended for first-year undergraduate students</li>
-</ul>
-</section>
-
-<section class="course-section">
 <h2>Course Schedule</h2>
-<p class="course-note">The course includes classroom teaching, peer sharing, a campus sports visit and fencing experience, research case studies, small-group discussions, and student presentations. Exact guest speakers and activity arrangements may vary by year. Current course announcements take precedence.</p>
+<p class="course-note">Activities include classroom instruction, peer discussion, a visit to campus sports facilities with an introduction to fencing, research case studies, small-group discussions, and student presentations. Guest speakers and activities may vary from year to year; consult the current course announcements for confirmed arrangements.</p>
 <ul class="course-schedule">
 {%- for item in page.syllabus %}
 <li><span class="schedule-no">Week {{ item.week }}</span><div><span class="schedule-topic">{{ item.topic | escape }}</span><span class="schedule-desc">{{ item.description | escape }}</span></div></li>
