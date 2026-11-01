@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Courses
-description: Our team offers four courses that cover crash safety, injury protection, and intelligent vehicle safety for students from their first year through graduate study. They are the First-Year Orientation Course, the general education course Safety of Intelligent Vehicle, the undergraduate restricted elective Vehicle Safety, and Fundamentals of Automotive Crash Safety, which is open to undergraduate, graduate and international students. Each course page outlines the course content and lecture topics.
+description: Our team offers four courses that cover crash safety, injury protection, and intelligent vehicle safety for students from their first year through graduate study. They are the First-Year Orientation Course, the general education course Safety of Intelligent Vehicles, the undergraduate restricted elective Vehicle Safety, and Fundamentals of Automotive Crash Safety, which is open to undergraduate, graduate and international students. Each course page outlines the course content and lecture topics.
 nav: true
 nav_order: 3
 calendar: true
@@ -107,7 +107,7 @@ calendar: true
 }
 </style>
 
-{% assign course_titles = "Fundamentals of Automotive Crash Safety|Vehicle Safety|Safety of Intelligent Vehicle|First-Year Orientation Course" | split: "|" %}
+{% assign course_titles = "Fundamentals of Automotive Crash Safety|Vehicle Safety|Safety of Intelligent Vehicles|First-Year Orientation Course" | split: "|" %}
 
 <div class="teaching-custom">
 
@@ -144,7 +144,7 @@ calendar: true
               <span class="course-tag">THU Excellent Course</span>
             </div>
         
-          {% when "Safety of Intelligent Vehicle" %}
+          {% when "Safety of Intelligent Vehicles" %}
             <div class="course-tags">
               <span class="course-tag">Science General Education</span>
               <span class="course-tag">Model Course in Ideological and Political Education</span>
