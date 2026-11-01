@@ -156,6 +156,8 @@ syllabus:
   border-radius: 12px;
   background: #fff;
 }
+/* A card alone in its row spans the full width of the card grid */
+.course-card.full-row { grid-column: 1 / -1; }
 .course-card h3 { margin: 0 0 6px; color: var(--cp-purple-dark); font-size: 16px; font-weight: 700; }
 .course-card p { margin: 0; font-size: 14.5px; line-height: 1.65; }
 
@@ -242,7 +244,7 @@ syllabus:
 <div class="course-cards">
 <div class="course-card"><h3>Fundamental Theories</h3><p>An overview of automotive safety and occupant restraint systems</p></div>
 <div class="course-card"><h3>Future Trends</h3><p>Intelligent vehicles, future mobility, and transportation safety</p></div>
-<div class="course-card"><h3>Research Hotspots</h3><p>Explore our work on intelligent vehicle safety and EV thermal runaway prevention, featuring typical accident case analyses and an overview of our team's latest research</p></div>
+<div class="course-card full-row"><h3>Research Hotspots</h3><p>Explore our work on intelligent vehicle safety and EV thermal runaway prevention, featuring typical accident case analyses and an overview of our team's latest research</p></div>
 </div>
 </div>
 <figure class="course-photo">
