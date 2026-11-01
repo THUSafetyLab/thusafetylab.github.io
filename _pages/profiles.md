@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: Team
-description: Faculty members of Automotive Crash Laboratory
+description:
 nav: true
 nav_order: 5
 ---
@@ -105,6 +105,8 @@ nav_order: 5
     var(--global-divider-color, #ddd);
 }
 
+/* Section headings: "Faculty members ..." and "About the Faculty Team" */
+.team-faculty .faculty-heading,
 .team-faculty .faculty-overview h2 {
   margin: 0 0 20px;
 
@@ -185,6 +187,8 @@ nav_order: 5
   <!-- ==========================================
        Faculty Members
        ========================================== -->
+
+  <h2 class="faculty-heading">Faculty members of Automotive Crash Laboratory</h2>
 
   <div class="faculty-grid">
 
