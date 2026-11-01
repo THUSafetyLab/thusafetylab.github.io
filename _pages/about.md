@@ -8,11 +8,11 @@ profile:
   align: right
   images:
     - lab_photo/lab_photo_0.jpg
-    - lab_photo/lab_photo_1.jpg
+    - lab_photo/lab_photo_95.jpg
     - lab_photo/lab_photo_91.jpg
-    - lab_photo/lab_photo_92.jpg
     - lab_photo/lab_photo_93.jpg
-    - lab_photo/lab_photo_94.jpg
+    - lab_photo/lab_photo_92.jpg
+    - lab_photo/lab_photo_1.jpg
   image_circular: false
 
 selected_papers: true
