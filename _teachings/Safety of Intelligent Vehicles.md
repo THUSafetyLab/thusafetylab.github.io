@@ -225,7 +225,7 @@ syllabus:
 
 <section class="course-hero">
 <div class="course-hero-text">
-<div class="course-tags"><span>General Education in Science</span><span>General Education Course Excellence Initiative</span><span>Demonstration Course in Moral and Values Education</span></div>
+<div class="course-tags"><span>General Education Course Excellence Initiative</span><span>Demonstration Course in Moral and Values Education</span></div>
 <dl class="course-facts">
 <div><dt>Instructors</dt><dd>{{ page.instructor }}</dd></div>
 <div><dt>Term</dt><dd>{{ page.term }}</dd></div>
