@@ -88,7 +88,7 @@ td {
 | Detong Qin | Jun 2023 | Outstanding Communist Party Member, Tsinghua University |
 | Detong Qin | May 2023 | First Prize for Outstanding Oral Presentation, 2023 National Graduate Academic Forum on Intelligent Electric Vehicles & the 710th Tsinghua University Doctoral Academic Forum |
 | Qingfan Wang | May 2023 | Second Prize for Outstanding Oral Presentation, 2023 National Graduate Academic Forum on Intelligent Electric Vehicles & the 710th Tsinghua University Doctoral Academic Forum |
-| Bingbing Nie amd Qing Zhou | 2023 | Recognition for Excellence in Undergraduate Teaching Plans, Beijing Higher Education Institutions |
+| Bingbing Nie and Qing Zhou | 2023 | Recognition for Excellence in Undergraduate Teaching Plans, Beijing Higher Education Institutions |
 | Bingbing Nie | 2023 | Lin Feng Counselor Award, Tsinghua University |
 | Bingbing Nie | 2023 | Demonstration Course in Moral and Values Education ([Vehicle Safety]({{ '/teachings/Vehicle-safety/' | relative_url }})), Tsinghua University; Exemplary Educator in Integrating Ethics and Values into Teaching, Tsinghua University |
 | Bingbing Nie | 2023 | Outstanding Faculty Member in the Annual Performance Assessment (2023), School of Vehicle and Mobility, Tsinghua University |
