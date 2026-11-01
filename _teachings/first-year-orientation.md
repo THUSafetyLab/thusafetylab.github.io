@@ -215,7 +215,6 @@ syllabus:
 <section class="course-section">
 <h2>Prerequisites</h2>
 <ul class="course-chips">
-<li>No prerequisites</li>
 <li>Primarily intended for first-year undergraduate students</li>
 </ul>
 </section>
