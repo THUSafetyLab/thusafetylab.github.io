@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Vehicle Safety
-description: This course provides a comprehensive introduction to the scientific foundations, research methods, and emerging technologies of automotive safety. It covers interdisciplinary topics including vehicle engineering, numerical computation, artificial intelligence, and data analysis, with an emphasis on vehicle engineering.
+description: This course introduces the scientific foundations, research methods, and emerging technologies of automotive safety. With vehicle engineering as its core, it draws on numerical methods, artificial intelligence, and data analysis to examine safety challenges across the interactions between people, vehicles, and the road environment.
 instructor: Bingbing Nie, Qing Zhou
 year: 2026
 term: Fall
@@ -10,47 +10,47 @@ course_id: 40150762-0
 syllabus:
   - week: 1
     topic: Introduction
-    description: Course information, the current state of road traffic safety, and the research subjects and methods of automotive safety.
+    description: An introduction to the course, the current state of road traffic safety, and key research questions and methods in automotive safety.
 
   - week: 2
     topic: Fundamental Concepts and Technologies of Automotive Safety
-    description: An introduction to active and passive automotive safety technologies through events related to automotive safety.
+    description: An introduction to active and passive safety technologies through automotive safety case studies.
 
   - week: 3
     topic: Occupant Restraint Systems
-    description: Fundamental concepts of occupant restraint systems, occupant collision dynamics, restraint system design principles, recent research on intelligent vehicle safety technologies, and future trends in automotive safety.
+    description: Fundamentals of occupant restraint systems, occupant dynamics during a crash, restraint design principles, recent advances in intelligent vehicle safety, and future directions in automotive safety.
 
   - week: 4
     topic: System Safety, Operational Safety, and Intelligent Protection
-    description: Fundamental concepts and guiding principles, safety decision-making for intelligent vehicles, system safety, operational safety, and intelligent protection.
+    description: Fundamental concepts and principles of system safety, operational safety, and intelligent protection, with a focus on decision-making for safe intelligent vehicle operation.
 
   - week: 5
     topic: Dimensional Analysis, Experimental Techniques, and Numerical Methods
-    description: Dimensional analysis, experimental techniques and methods, virtual reality and accelerated sampling of rare hazardous scenarios, numerical research methods, and virtual simulation data collection.
+    description: Dimensional analysis, experimental techniques, virtual reality, accelerated sampling of rare hazardous scenarios, numerical methods, and data collection in simulation environments.
 
   - week: 6
     topic: "Injury Biomechanics: Theories and Methods"
-    description: Injury mechanisms and tolerance, injury risk assessment methods, human surrogates in automotive safety, injury protection in multiple fields, and the concepts and applications of active human response.
+    description: Injury mechanisms and tolerance, injury risk assessment, human surrogates for automotive safety research, injury prevention across application areas, and the role of active human responses in injury biomechanics.
 
   - week: 7
-    topic: Safety Protection for Different Population Groups
+    topic: Injury Prevention for Different Road User Groups
     description: Child occupant protection, occupant restraint system design, pedestrian protection, and related discussions and review.
 
   - week: 8
     topic: Case Studies and Discussion
-    description: Case studies of severe high-speed rear-end collisions and battery safety, with an extended introduction to passive safety in formula racing.
+    description: Case studies of severe high-speed rear-end collisions and battery safety, followed by a broader discussion of passive safety in formula racing.
 
   - week: 9
     topic: Automotive Safety Testing and Evaluation
-    description: Test scenarios and tools, regulations and consumer-oriented assessment methods, safety testing under the four transformations of the automotive industry, and battery safety evaluation.
+    description: Test scenarios and tools, safety regulations, consumer safety assessment methods, the implications of changes in the automotive industry for safety testing, and battery safety evaluation.
 
   - week: 10
     topic: Machine Learning Methods and Applications in Automotive Safety
-    description: Fundamental concepts of artificial intelligence, commonly used machine learning algorithms, applications of machine learning in automotive safety, and related discussion and review.
+    description: Fundamentals of artificial intelligence, widely used machine learning algorithms, and their applications in automotive safety, followed by discussion and review.
 
   - week: 11
     topic: Future Crash Scenarios and Risk Quantification
-    description: Future road traffic crash scenarios, intelligent vehicle risk prediction, prediction-based active hood systems, autonomous vehicle decision-making with ethical intervention, and safety and trust.
+    description: Future road traffic crash scenarios, risk prediction for intelligent vehicles, predictive active hood systems, ethical considerations in autonomous vehicle decision-making, and the relationship between safety and trust.
 ---
 
 <style>
@@ -209,13 +209,13 @@ syllabus:
 
 <section class="course-hero">
 <div class="course-hero-text">
-<div class="course-tags"><span>Restricted Elective</span><span>THU Excellent Course</span></div>
+<div class="course-tags"><span>Restricted Elective</span><span>Tsinghua University Course of Excellence</span></div>
 <dl class="course-facts">
 <div><dt>Instructors</dt><dd>{{ page.instructor }}</dd></div>
 <div><dt>Term</dt><dd>{{ page.term }}</dd></div>
 <div><dt>Course No.</dt><dd>{{ page.course_id }}</dd></div>
 <div><dt>Duration</dt><dd>{{ page.syllabus.size }} weeks</dd></div>
-<div class="wide"><dt>Focus</dt><dd>Human–vehicle–road safety, from fundamental theory to intelligent protection</dd></div>
+<div class="wide"><dt>Focus</dt><dd>Safety across people, vehicles, and the road environment, from scientific foundations to intelligent protection</dd></div>
 </dl>
 </div>
 </section>
@@ -224,12 +224,12 @@ syllabus:
 <h2>Course Overview</h2>
 <div class="course-overview">
 <div class="course-overview-text">
-<p>This course addresses the safety needs of the human–vehicle–road system. Students will study the fundamental theories of automotive safety, learn protection methods and design applications, and develop interdisciplinary analytical skills. Course content includes:</p>
+<p>This course examines automotive safety through the interactions between people, vehicles, and the road environment. Students study the scientific foundations of crash and injury prevention, explore how protection strategies inform engineering design, and develop the interdisciplinary analytical skills needed to address vehicle safety challenges. Course content includes:</p>
 <div class="course-cards">
 <div class="course-card"><h3>Concepts and Frameworks</h3><p>Fundamental concepts and frameworks of automotive safety</p></div>
-<div class="course-card"><h3>Methods</h3><p>Classical methods and their recent developments</p></div>
-<div class="course-card"><h3>Research Topics</h3><p>Specialized research topics in automotive safety</p></div>
-<div class="course-card"><h3>Interdisciplinary Research</h3><p>Vehicle engineering, numerical computation, artificial intelligence, and data analysis</p></div>
+<div class="course-card"><h3>Research Methods</h3><p>Established approaches to automotive safety research and recent methodological advances</p></div>
+<div class="course-card"><h3>Current Research</h3><p>Selected research questions and emerging technologies in automotive safety</p></div>
+<div class="course-card"><h3>Interdisciplinary Approaches</h3><p>Vehicle engineering, numerical methods, artificial intelligence, and data analysis</p></div>
 </div>
 </div>
 <figure class="course-photo">
@@ -245,7 +245,7 @@ syllabus:
 <li>Calculus</li>
 <li>University Physics</li>
 <li>Mechanics of Materials</li>
-<li>Vehicle theory and control theory (recommended)</li>
+<li>Background in vehicle engineering and control theory (recommended)</li>
 </ul>
 </section>
 
