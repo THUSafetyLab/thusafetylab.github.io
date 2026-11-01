@@ -5,7 +5,6 @@ description: "This undergraduate general education elective examines the evoluti
 instructor: Bingbing Nie, Hong Wang, Shaobing Xu
 year: 2026
 term: Fall
-course_id: 00150222
 # Weekly plan rendered by this page (named "syllabus" so the default layout does not add its own schedule table)
 syllabus:
   - week: 1
