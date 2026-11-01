@@ -146,7 +146,6 @@ calendar: true
         
           {% when "Safety of Intelligent Vehicles" %}
             <div class="course-tags">
-              <span class="course-tag">General Education in Science</span>
               <span class="course-tag">General Education Course Excellence Initiative</span>
               <span class="course-tag">Demonstration Course in Moral and Values Education</span>
             </div>
