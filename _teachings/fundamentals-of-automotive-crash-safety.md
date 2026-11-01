@@ -1,97 +1,97 @@
 ---
 layout: "course"
 title: "Fundamentals of Automotive Crash Safety"
-description: "This course introduces the fundamentals and state-of-the-art technologies of automotive crash safety and impact protection, including crash mechanics, injury biomechanics, occupant restraint systems, pedestrian protection, vehicle structures and materials, adaptive protection for autonomous vehicles, and battery crash safety."
+description: "This course introduces the scientific foundations and advanced technologies of automotive crash safety and impact protection. Topics include crash mechanics, injury biomechanics, occupant restraint systems, pedestrian protection, the impact behavior of vehicle structures and materials, adaptive protection for autonomous vehicles, and battery crash safety."
 instructor: Qing Zhou, Bingbing Nie, Yong Xia
 year: 2026
 term: "Fall"
 course_id: "80150193"
 class_hours: 48
 credits: 3
-language: "Chinese and English (parallel classes)"
+language: "Separate Chinese- and English-language sections"
 # Lecture plan rendered by this page (named "syllabus" so the default layout does not add its own schedule table)
 syllabus:
   - lecture: "1"
     module: "Crash Mechanics and Safety Assessment"
     topic: "Fundamentals of Vehicle Safety"
-    description: "Background of vehicle safety; Vehicle crash process and types of collisions; Components and structures relevant to crash safety design; Crash design requirements and process; New safety issues for electric vehicles and autonomous vehicles."
+    description: "An introduction to vehicle safety; crash sequences and collision types; components and structures involved in crash protection; crash safety design requirements and processes; emerging safety challenges for electric and autonomous vehicles."
 
   - lecture: "2"
     module: "Crash Mechanics and Safety Assessment"
-    topic: "Vehicle Response and Occupant Ride-Down under Frontal Collision"
-    description: "Vehicle crash pulse; Vehicle kinematics and occupant kinematics; Occupant ride-down; Crash pulse characterization; Design for harmonizing responses of vehicle and occupant; Influencing factors of crash severity."
+    topic: "Vehicle Response and Occupant Ride-Down in Frontal Crashes"
+    description: "Vehicle crash pulses and their characterization; vehicle and occupant kinematics; occupant ride-down; design strategies for coordinating vehicle and occupant responses; factors affecting crash severity."
 
   - lecture: "3"
     module: "Crash Mechanics and Safety Assessment"
-    topic: "Human Body Injuries in Vehicle Collisions"
-    description: "Injury biomechanics – background, applications & methods; Injury mechanism, injury characterization, mechanical response & injury tolerance of human body under impact loading; Impact biomechanics exampled with body regions."
+    topic: "Injury Biomechanics in Vehicle Crashes"
+    description: "Foundations, applications, and methods of injury biomechanics; injury mechanisms and characterization; human mechanical response and injury tolerance under impact loading; examples organized by body region."
 
   - lecture: "4"
     module: "Crash Mechanics and Safety Assessment"
     topic: "Vehicle Crash Safety Assessment"
-    description: "Part 1: Vehicle Crash Test Methods; Vehicle crash test laboratory & devices; Preparation of vehicle crash test; Types of vehicle crash tests and regulations; Sled test; Part 2: Crash Test Dummy; Purpose of crash test dummies; Hybrid III frontal impact dummy; Other dummies; Historical development of crash dummies; Crash dummy improvement and virtual assessment."
+    description: "Part 1: Crash test methods, facilities, equipment, and preparation; test types and applicable regulations; sled testing. Part 2: The purpose and development of crash test dummies, including the Hybrid III frontal impact dummy and other dummy designs; improvements to dummies and their evaluation through simulation."
 
   - lecture: "5"
     module: "Occupant Restraint Systems"
-    topic: "Seatbelt and Airbag"
-    description: "Structures and components of seatbelt and airbag; Protection functions of seatbelt and airbag; Risks and hazards of airbag; Advanced seatbelts and airbags."
+    topic: "Seat Belts and Airbags"
+    description: "Design and components of seat belts and airbags; principles of occupant protection; risks associated with airbag deployment; advanced seat belt and airbag technologies."
 
   - lecture: "5"
     optional: true
     module: "Occupant Restraint Systems"
     topic: "Crash Sensing"
-    description: "Crash Data, Crash Analyses, Crash Signals; Crash Sensing Criteria and Algorithms; Procedure for Determining Trigger Threshold; Key Things of Crash Sensing."
+    description: "Crash data, analysis, and signals; crash sensing criteria and algorithms; procedures for determining deployment thresholds; key considerations in crash sensing."
 
   - lecture: "6"
     module: "Occupant Restraint Systems"
-    topic: "Seat as Occupant Impact Protection Device"
-    description: "Functions and structure of vehicle seat; Whiplash injury and protection; The debate between stiff and yielding seats; Sliding seat and seat mounted restraints."
+    topic: "Vehicle Seats and Occupant Crash Protection"
+    description: "Functions and structure of vehicle seats; whiplash injury and prevention; trade-offs between stiff and yielding seat designs; sliding seats and seat-mounted restraints."
 
   - lecture: "7"
     optional: true
     module: "Occupant Restraint Systems"
-    topic: "Protection of Child Passengers"
-    description: "Child safety issues in traffic accidents; Child Restraint System and crash safety assessment."
+    topic: "Child Occupant Protection"
+    description: "Child occupant safety in road traffic crashes; child restraint systems and assessment of their crash protection performance."
 
   - lecture: "8"
     module: "Occupant Restraint Systems"
-    topic: "Adaptive Protection for Autonomous Vehicle"
-    description: "Challenges in occupant crash protection; Adaptive occupant restraint; Crash protection concerning Asian body sizes; Smart and individualized crash protection; Unavoidable collisions to autonomous vehicles; The Europe OSCCAR Project."
+    topic: "Adaptive Occupant Protection for Autonomous Vehicles"
+    description: "Challenges in occupant crash protection; adaptive restraint systems; body size variation in Asian populations and its implications for protection; intelligent and personalized crash protection; unavoidable collisions involving autonomous vehicles; the European OSCCAR project."
 
   - lecture: "9"
-    module: "Impact Interactions between Human Body and Vehicle Structures"
+    module: "Impact Interactions between the Human Body and Vehicle Structures"
     topic: "Side Impact Protection"
-    description: "Side impact accident and crash safety assessment; Analysis of side impact process; Analysis of pelvis pusher design; Interaction between side structure and occupant; Increasingly strict side impact protection requirement."
+    description: "Side impact crashes and safety assessment; analysis of side impact dynamics and pelvis pusher design; interactions between the vehicle side structure and the occupant; increasingly stringent requirements for side impact protection."
 
   - lecture: "10"
-    module: "Impact Interactions between Human Body and Vehicle Structures"
+    module: "Impact Interactions between the Human Body and Vehicle Structures"
     topic: "Occupant Head Impact Protection"
-    description: "Background of occupant head impact problem; Mechanics model and rationales; How findings guide countermeasure design."
+    description: "Occupant head impact risks; mechanical models and their underlying principles; application of research findings to the design of protective measures."
 
   - lecture: "11"
-    module: "Impact Interactions between Human Body and Vehicle Structures"
+    module: "Impact Interactions between the Human Body and Vehicle Structures"
     topic: "Pedestrian Impact Protection"
-    description: "Characteristics of car-to-pedestrian collision accidents; Injuries in car-to-pedestrian collisions; Assessment methods for pedestrian impact safety; Vehicle design for pedestrian impact protection; Emerging subjects and future pedestrian protection."
+    description: "Characteristics of vehicle–pedestrian collisions and resulting injuries; methods for assessing pedestrian protection; vehicle design to reduce pedestrian injuries; emerging research and future directions in pedestrian safety."
 
   - lecture: "12"
     module: "Vehicle Structures and Materials under Impact"
     topic: "Impact Mechanics of Thin-Walled Tubes"
-    description: "Thin-walled structural members of vehicle body and functions; Concept of plastic hinge; Design of axial crush of thin-walled tube; Bending of box tube."
+    description: "Thin-walled vehicle body structures and their functions; the plastic hinge concept; design of thin-walled tubes for axial crushing; bending of box-section tubes."
 
   - lecture: "13"
     module: "Vehicle Structures and Materials under Impact"
-    topic: "Impact Failures of Vehicle Materials (a short version)"
-    description: "Needs of material characterization and modeling for vehicle crash simulations; Challenges in testing and modeling material fracture behaviors under impact loading; Future development: data-driven method."
+    topic: "Material Failure under Impact Loading (Overview)"
+    description: "Material characterization and modeling requirements for vehicle crash simulation; challenges in testing and modeling fracture under impact loading; emerging data-driven methods."
 
   - lecture: "14"
     module: "Vehicle Structures and Materials under Impact"
-    topic: "Impact Safety of Battery"
-    description: "Battery safety in vehicle collision accidents; Damage of battery cell under crush and impact; Failure mechanisms of battery cell under mechanical abuse; Modeling of battery and electric vehicle for crash safety."
+    topic: "Battery Crash Safety"
+    description: "Battery safety in vehicle crashes; cell damage under crush and impact loading; cell failure mechanisms under mechanical abuse; battery and electric vehicle modeling for crash safety assessment."
 
   - lecture: "15"
     module: "Vehicle Structures and Materials under Impact"
-    topic: "Small Lightweight Vehicle and Crash Compatibility"
-    description: "Problem in reality: vehicle size and safety; Influencing factors of crash compatibility; Assessment of vehicle compatibility; Lightweight and safety."
+    topic: "Small, Lightweight Vehicles and Crash Compatibility"
+    description: "The relationship between vehicle size and crash safety; factors affecting crash compatibility; methods for assessing compatibility; balancing weight reduction with crash protection."
 ---
 
 <style>
@@ -181,6 +181,8 @@ syllabus:
   border-radius: 12px;
   background: #fff;
 }
+/* A card alone in its row spans the full width of the card grid */
+.course-card.full-row { grid-column: 1 / -1; }
 .course-card h3 { margin: 0 0 6px; color: var(--cp-purple-dark); font-size: 16px; font-weight: 700; }
 .course-card p { margin: 0; font-size: 14.5px; line-height: 1.65; }
 
@@ -248,14 +250,14 @@ syllabus:
 
 <section class="course-hero">
 <div class="course-hero-text">
-<div class="course-tags"><span>National First-Class Course</span><span>THU Excellent Course</span></div>
+<div class="course-tags"><span>National First-Class Course</span><span>Tsinghua University Course of Excellence</span></div>
 <dl class="course-facts">
 <div><dt>Instructors</dt><dd>{{ page.instructor }}</dd></div>
 <div><dt>Term</dt><dd>{{ page.term }}</dd></div>
 <div><dt>Course No.</dt><dd>{{ page.course_id }}</dd></div>
 <div><dt>Credits &amp; Hours</dt><dd>{{ page.credits }} credits · {{ page.class_hours }} class hours</dd></div>
 <div><dt>Language</dt><dd>{{ page.language }}</dd></div>
-<div><dt>Open to</dt><dd>Undergraduate, graduate, and international students</dd></div>
+<div><dt>Open to</dt><dd>Undergraduate and graduate students, including international students</dd></div>
 </dl>
 </div>
 </section>
@@ -264,7 +266,7 @@ syllabus:
 <h2>Course Overview</h2>
 <div class="course-overview">
 <div class="course-overview-text">
-<p>Fundamentals of Automotive Crash Safety (FACS) covers fundamental knowledge, theory, and current technologies in vehicle crash safety and impact protection. It is open to graduate students, international students, and undergraduate students.</p>
+<p>Fundamentals of Automotive Crash Safety (FACS) introduces the scientific principles and engineering methods used to understand crashes and design effective protection. The course welcomes undergraduate and graduate students, including international students.</p>
 <p>Students study vehicle and occupant responses in collisions, injury mechanisms, crash testing and assessment, occupant restraints, pedestrian protection, lightweight vehicle design, and the impact behavior of vehicle structures and materials. The course also addresses adaptive protection for autonomous vehicles and battery failure mechanisms, prediction models, and crash protection for electric vehicles.</p>
 </div>
 <figure class="course-photo">
@@ -279,11 +281,11 @@ syllabus:
 <p>By the end of the course, students will be able to:</p>
 <ul class="course-checklist">
 <li>Explain the role of vehicle safety in product development and design, including the evolution and limitations of safety technologies.</li>
-<li>Understand crash protection design constraints arising from lightweighting and packaging requirements.</li>
+<li>Explain how lightweighting and vehicle packaging requirements constrain crash protection design.</li>
 <li>Explain human injury mechanisms under impact loads and the principles of occupant restraint systems.</li>
-<li>Understand safety risks and protection strategies for autonomous vehicles.</li>
-<li>Understand methods for establishing battery safety envelopes and failure tolerance under impact loads.</li>
-<li>Recognize innovative battery pack designs for electric vehicle crash protection.</li>
+<li>Describe safety risks and protection strategies for autonomous vehicles.</li>
+<li>Describe methods for establishing battery safety envelopes and failure tolerance under impact loading.</li>
+<li>Identify innovative battery pack designs that improve electric vehicle crash protection.</li>
 </ul>
 </section>
 
@@ -298,22 +300,22 @@ syllabus:
 
 <section class="course-section">
 <h2>Teaching Format</h2>
-<p>The Chinese and English classes share the same course number and teaching team. Students may attend either language class.</p>
+<p>The course offers separate Chinese- and English-language sections with the same course number and teaching team. Students may attend either section.</p>
 <div class="course-cards">
 <div class="course-card">
-<h3>Chinese Class</h3>
-<p>Lectures and discussions are in Chinese; slides and supplementary materials are in English. Classes are also broadcast live via Rain Classroom for students who wish to attend online without registering.</p>
+<h3>Chinese-Language Section</h3>
+<p>Lectures and discussions are conducted in Chinese, with slides and supplementary materials in English. Sessions are also streamed live via Rain Classroom for students who wish to audit the course online without enrolling.</p>
 </div>
 <div class="course-card">
-<h3>English Class</h3>
-<p>Self-paced study of <a href="https://www.xuetangx.com/course/thu08021000357intl/14314101" target="_blank" rel="noopener">prerecorded lectures on XuetangX</a>, combined with four in-person sessions during the semester. These sessions may include focused reviews, questions and answers, and, where appropriate, student presentations followed by feedback and discussion. All sessions are conducted in English.</p>
+<h3>English-Language Section</h3>
+<p>Students study <a href="https://www.xuetangx.com/course/thu08021000357intl/14314101" target="_blank" rel="noopener">prerecorded lectures on XuetangX</a> at their own pace and attend four in-person sessions during the semester. These sessions may include reviews of key topics, questions and answers, and, where appropriate, student presentations with feedback and discussion. All sessions are conducted in English.</p>
 </div>
 </div>
 </section>
 
 <section class="course-section">
 <h2>Course Schedule</h2>
-<p class="course-note">The lecture sequence is organized into four modules. Lecture numbers identify course content rather than confirmed teaching weeks. Crash sensing (an extension of Lecture 5) and Lecture 7 are optional.</p>
+<p class="course-note">The syllabus is organized into four modules. Lecture numbers indicate the sequence of topics and do not correspond to specific teaching weeks. Crash Sensing (an extension of Lecture 5) and Lecture 7 are optional.</p>
 {%- assign modules = page.syllabus | group_by: "module" -%}
 {%- for module in modules %}
 <div class="course-module">Module {{ forloop.index }} · {{ module.name }}</div>
