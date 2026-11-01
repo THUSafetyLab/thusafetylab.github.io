@@ -135,19 +135,25 @@ calendar: true
           {% when "Fundamentals of Automotive Crash Safety" %}
             <div class="course-tags">
               <span class="course-tag">National First-Class Course</span>
-              <span class="course-tag">THU Excellent Course</span>
+              <span class="course-tag">Tsinghua University Course of Excellence</span>
             </div>
         
           {% when "Vehicle Safety" %}
             <div class="course-tags">
               <span class="course-tag">Restricted Elective</span>
-              <span class="course-tag">THU Excellent Course</span>
+              <span class="course-tag">Tsinghua University Course of Excellence</span>
             </div>
         
           {% when "Safety of Intelligent Vehicles" %}
             <div class="course-tags">
-              <span class="course-tag">Science General Education</span>
-              <span class="course-tag">Model Course in Ideological and Political Education</span>
+              <span class="course-tag">General Education in Science</span>
+              <span class="course-tag">General Education Course Excellence Initiative</span>
+              <span class="course-tag">Demonstration Course in Moral and Values Education</span>
+            </div>
+
+          {% when "First-Year Orientation Course" %}
+            <div class="course-tags">
+              <span class="course-tag">Tailored for First-Year Students Choosing Courses</span>
             </div>
         
         {% endcase %}
