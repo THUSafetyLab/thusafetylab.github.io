@@ -5,11 +5,154 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://thusafetylab.github.io/teachings/fundamentals-of-automotive-crash-safety/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Intelligent Safety Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Research/">Research Areas </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Courses </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">Awards </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">Team </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Fundamentals of Automotive Crash Safety</h1> <p class="post-description">This course introduces the fundamentals and state-of-the-art technologies of automotive crash safety and impact protection, including crash mechanics, injury biomechanics, occupant restraint systems, pedestrian protection, vehicle structures and materials, adaptive protection for autonomous vehicles, and battery crash safety.</p> </header> <article> <div class="course"> <div class="course-info"> <p><strong>Instructor:</strong> Qing Zhou, Bingbing Nie, Yong Xia</p> <p><strong>Term:</strong> Fall</p> </div> <style>
-/* Hide only the introductory description on this course page */
-.post-description {
-  display: none !important;
+/* Course page layout (identical block in all course pages) */
+.post-description { display: none !important; }
+.course > .course-info { display: none; }
+
+.course-page {
+  --cp-purple: #5b21b6;
+  --cp-purple-dark: #351063;
+  --cp-purple-soft: #f4efff;
+  --cp-purple-line: #ded2f6;
+  --cp-text: #202033;
+  --cp-muted: #67677a;
+  --cp-border: #e7e4ee;
+  color: var(--cp-text);
 }
-</style> <h2 id="course-overview">Course Overview</h2> <p>Fundamentals of Automotive Crash Safety (FACS) covers fundamental knowledge, theory, and current technologies in vehicle crash safety and impact protection. It is open to graduate students, international students, and undergraduate students.</p> <p>Students study vehicle and occupant responses in collisions, injury mechanisms, crash testing and assessment, occupant restraints, pedestrian protection, lightweight vehicle design, and the impact behavior of vehicle structures and materials. The course also addresses adaptive protection for autonomous vehicles and battery failure mechanisms, prediction models, and crash protection for electric vehicles.</p> <h2 id="learning-objectives">Learning Objectives</h2> <p>By the end of the course, students will be able to:</p> <ul> <li>Explain the role of vehicle safety in product development and design, including the evolution and limitations of safety technologies.</li> <li>Understand crash protection design constraints arising from lightweighting and packaging requirements.</li> <li>Explain human injury mechanisms under impact loads and the principles of occupant restraint systems.</li> <li>Understand safety risks and protection strategies for autonomous vehicles.</li> <li>Understand methods for establishing battery safety envelopes and failure tolerance under impact loads.</li> <li>Recognize innovative battery pack designs for electric vehicle crash protection.</li> </ul> <h2 id="prerequisites">Prerequisites</h2> <ul> <li>Engineering mechanics</li> <li>Engineering mathematics</li> <li>Numerical methods</li> </ul> <h2 id="teaching-team">Teaching Team</h2> <ul> <li>Lecturer: Prof. Qing Zhou (zhouqing@tsinghua.edu.cn)</li> <li>Co-Lecturer: Prof. NIE Bingbing (nbb@tsinghua.edu.cn)</li> <li>Co-Lecturer: Prof. XIA Yong (xiayong@tsinghua.edu.cn)</li> </ul> <h2 id="class-schedule-and-teaching-format">Class Schedule and Teaching Format</h2> <p>The Chinese and English classes share the same course number and teaching team. Students may attend either language class.</p> <p>In the Chinese class, lectures and discussions are in Chinese; slides and supplementary materials are in English. Classes are also broadcast live via Rain Classroom for students who wish to attend online without registering.</p> <p>The English class combines self-paced study of prerecorded lectures on XuetangX with four in-person sessions during the semester. These sessions may include focused reviews, questions and answers, and, where appropriate, student presentations followed by feedback and discussion. All sessions are conducted in English.</p> <p>The lecture sequence is organized into four modules. Lecture numbers identify course content rather than confirmed teaching weeks. Lecture 5 includes optional crash sensing content, and Lecture 7 is optional.</p> <h2 id="references">References</h2> <ul> <li>Previous versions of the <em>Fundamentals of Automotive Crash Safety</em> lecture notes are available on Tsinghua Web Learning.</li> <li><a href="https://www.xuetangx.com/course/thu08021000357intl/14314101" rel="external nofollow noopener" target="_blank">Fundamentals of Automotive Crash Safety — English online course on XuetangX</a></li> </ul> <h2>Schedule</h2> <table class="table table-sm table-responsive"> <thead> <tr> <th>Week</th> <th>Date</th> <th>Topic</th> <th>Materials</th> </tr> </thead> <tbody> <tr> <td></td> <td></td> <td> <strong>Fundamentals of Vehicle Safety</strong> <div class="schedule-description"> <p>Background of vehicle safety; Vehicle crash process and types of collisions; Components and structures relevant to crash safety design; Crash design requirements and process; New safety issues for electric vehicles and autonomous vehicles.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Vehicle Response and Occupant Ride-Down under Frontal Collision</strong> <div class="schedule-description"> <p>Vehicle crash pulse; Vehicle kinematics and occupant kinematics; Occupant ride-down; Crash pulse characterization; Design for harmonizing responses of vehicle and occupant; Influencing factors of crash severity.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Human Body Injuries in Vehicle Collisions</strong> <div class="schedule-description"> <p>Injury biomechanics – background, applications &amp; methods; Injury mechanism, injury characterization, mechanical response &amp; injury tolerance of human body under impact loading; Impact biomechanics exampled with body regions.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Vehicle Crash Safety Assessment</strong> <div class="schedule-description"> <p>Part 1: Vehicle Crash Test Methods; Vehicle crash test laboratory &amp; devices; Preparation of vehicle crash test; Types of vehicle crash tests and regulations; Sled test; Part 2: Crash Test Dummy; Purpose of crash test dummies; Hybrid III frontal impact dummy; Other dummies; Historical development of crash dummies; Crash dummy improvement and virtual assessment.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Seatbelt and Airbag</strong> <div class="schedule-description"> <p>Structures and components of seatbelt and airbag; Protection functions of seatbelt and airbag; Risks and hazards of airbag; Advanced seatbelts and airbags.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Crash Sensing</strong> <div class="schedule-description"> <p>Crash Data, Crash Analyses, Crash Signals; Crash Sensing Criteria and Algorithms; Procedure for Determining Trigger Threshold; Key Things of Crash Sensing.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Seat as Occupant Impact Protection Device</strong> <div class="schedule-description"> <p>Functions and structure of vehicle seat; Whiplash injury and protection; The debate between stiff and yielding seats; Sliding seat and seat mounted restraints.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Protection of Child Passengers (optional)</strong> <div class="schedule-description"> <p>Child safety issues in traffic accidents; Child Restraint System and crash safety assessment.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Adaptive Protection for Autonomous Vehicle</strong> <div class="schedule-description"> <p>Challenges in occupant crash protection; Adaptive occupant restraint; Crash protection concerning Asian body sizes; Smart and individualized crash protection; Unavoidable collisions to autonomous vehicles; The Europe OSCCAR Project.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Side Impact Protection</strong> <div class="schedule-description"> <p>Side impact accident and crash safety assessment; Analysis of side impact process; Analysis of pelvis pusher design; Interaction between side structure and occupant; Increasingly strict side impact protection requirement.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Occupant Head Impact Protection</strong> <div class="schedule-description"> <p>Background of occupant head impact problem; Mechanics model and rationales; How findings guide countermeasure design.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Pedestrian Impact Protection</strong> <div class="schedule-description"> <p>Characteristics of car-to-pedestrian collision accidents; Injuries in car-to-pedestrian collisions; Assessment methods for pedestrian impact safety; Vehicle design for pedestrian impact protection; Emerging subjects and future pedestrian protection.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Impact Mechanics of Thin-Walled Tubes</strong> <div class="schedule-description"> <p>Thin-walled structural members of vehicle body and functions; Concept of plastic hinge; Design of axial crush of thin-walled tube; Bending of box tube.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Impact Failures of Vehicle Materials (a short version)</strong> <div class="schedule-description"> <p>Needs of material characterization and modeling for vehicle crash simulations; Challenges in testing and modeling material fracture behaviors under impact loading; Future development: data-driven method.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Impact Safety of Battery</strong> <div class="schedule-description"> <p>Battery safety in vehicle collision accidents; Damage of battery cell under crush and impact; Failure mechanisms of battery cell under mechanical abuse; Modeling of battery and electric vehicle for crash safety.</p> </div> </td> <td> </td> </tr> <tr> <td></td> <td></td> <td> <strong>Small Lightweight Vehicle and Crash Compatibility</strong> <div class="schedule-description"> <p>Problem in reality: vehicle size and safety; Influencing factors of crash compatibility; Assessment of vehicle compatibility; Lightweight and safety.</p> </div> </td> <td> </td> </tr> </tbody> </table> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © 2026 Intelligent Safety Laboratory, Tsinghua University. Contact: <a href="mailto:thuacl@163.com">thuacl@163.com</a>. </div> </footer> <script>
+
+/* Overview card: tags and key facts */
+.course-hero {
+  margin: 6px 0 36px;
+  padding: 24px;
+  border: 1px solid var(--cp-border);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fff 0%, #f7f3ff 100%);
+}
+
+.course-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.course-tags span {
+  padding: 5px 11px;
+  border: 1px solid var(--cp-purple-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--cp-purple);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.course-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 20px; margin: 0; }
+.course-facts > div { min-width: 0; }
+.course-facts .wide { grid-column: span 2; }
+.course-facts dt {
+  margin-bottom: 3px;
+  color: var(--cp-muted);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.course-facts dd { margin: 0; color: var(--cp-text); font-size: 14.5px; font-weight: 600; line-height: 1.45; }
+
+.course-photo { margin: 0; }
+.course-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(33, 25, 48, 0.10);
+}
+.course-photo figcaption { margin-top: 8px; color: #858394; font-size: 12px; line-height: 1.45; text-align: center; }
+
+/* Course Overview: text on the left, classroom photo on the right */
+.course-overview { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.course-overview-text > p:last-child { margin-bottom: 0; }
+
+/* Sections */
+.course-section { margin: 0 0 34px; }
+.course-section h2 {
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--cp-border);
+  color: var(--cp-purple-dark);
+  font-size: 23px;
+  font-weight: 750;
+}
+.course-section p,
+.course-section li { color: var(--cp-muted); font-size: 15.5px; line-height: 1.75; }
+.course-section strong { color: var(--cp-text); }
+.course-section a { font-weight: 600; }
+
+/* Cards for course content, modules or class formats */
+.course-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 14px; }
+.course-card {
+  padding: 16px 18px;
+  border: 1px solid var(--cp-border);
+  border-left: 4px solid var(--cp-purple);
+  border-radius: 12px;
+  background: #fff;
+}
+.course-card h3 { margin: 0 0 6px; color: var(--cp-purple-dark); font-size: 16px; font-weight: 700; }
+.course-card p { margin: 0; font-size: 14.5px; line-height: 1.65; }
+
+/* Learning objectives with check marks */
+.course-checklist { margin: 0; padding-left: 0; list-style: none; }
+.course-checklist li { position: relative; margin-bottom: 6px; padding-left: 26px; }
+.course-checklist li::before { content: "✓"; position: absolute; top: 0; left: 0; color: var(--cp-purple); font-weight: 800; }
+
+/* Prerequisites as chips */
+.course-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.course-section .course-chips li {
+  padding: 6px 12px;
+  border: 1px solid var(--cp-purple-line);
+  border-radius: 999px;
+  background: var(--cp-purple-soft);
+  color: var(--cp-purple-dark);
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Schedule */
+.course-note { font-size: 14px !important; }
+.course-module { margin: 22px 0 8px; color: var(--cp-purple); font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.course-schedule { margin: 0; padding: 0; overflow: hidden; border: 1px solid var(--cp-border); border-radius: 12px; background: #fff; list-style: none; }
+.course-schedule li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; padding: 13px 16px; border-bottom: 1px solid #efedf3; }
+.course-schedule li:last-child { border-bottom: none; }
+.schedule-no {
+  align-self: start;
+  padding: 4px 0;
+  border-radius: 8px;
+  background: var(--cp-purple-soft);
+  color: var(--cp-purple-dark);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-align: center;
+}
+.schedule-topic { display: block; color: var(--cp-text); font-size: 15px; font-weight: 700; line-height: 1.5; }
+.schedule-desc { display: block; margin-top: 3px; color: var(--cp-muted); font-size: 14px; line-height: 1.6; }
+.schedule-optional {
+  margin-left: 6px;
+  padding: 1px 7px;
+  border: 1px solid var(--cp-purple-line);
+  border-radius: 999px;
+  color: var(--cp-purple);
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+  .course-overview { grid-template-columns: 1fr; }
+  .course-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .course-hero { padding: 18px; }
+  .course-facts { grid-template-columns: 1fr; }
+  .course-facts .wide { grid-column: auto; }
+  .course-schedule li { grid-template-columns: 1fr; gap: 6px; }
+  .schedule-no { justify-self: start; padding: 3px 10px; }
+}
+</style> <div class="course-page"> <section class="course-hero"> <div class="course-hero-text"> <div class="course-tags"> <span>National First-Class Course</span><span>THU Excellent Course</span> </div> <dl class="course-facts"> <div> <dt>Instructors</dt> <dd>Qing Zhou, Bingbing Nie, Yong Xia</dd> </div> <div> <dt>Term</dt> <dd>Fall</dd> </div> <div> <dt>Course No.</dt> <dd>80150193</dd> </div> <div> <dt>Credits &amp; Hours</dt> <dd>3 credits · 48 class hours</dd> </div> <div> <dt>Language</dt> <dd>Chinese and English (parallel classes)</dd> </div> <div> <dt>Open to</dt> <dd>Undergraduate, graduate, and international students</dd> </div> </dl> </div> </section> <section class="course-section"> <h2>Course Overview</h2> <div class="course-overview"> <div class="course-overview-text"> <p>Fundamentals of Automotive Crash Safety (FACS) covers fundamental knowledge, theory, and current technologies in vehicle crash safety and impact protection. It is open to graduate students, international students, and undergraduate students.</p> <p>Students study vehicle and occupant responses in collisions, injury mechanisms, crash testing and assessment, occupant restraints, pedestrian protection, lightweight vehicle design, and the impact behavior of vehicle structures and materials. The course also addresses adaptive protection for autonomous vehicles and battery failure mechanisms, prediction models, and crash protection for electric vehicles.</p> </div> <figure class="course-photo"> <img src="/assets/img/courses/FACS-1.jpg" alt="Classroom photo from Fundamentals of Automotive Crash Safety" loading="lazy"> <figcaption>Classroom photo</figcaption> </figure> </div> </section> <section class="course-section"> <h2>Learning Objectives</h2> <p>By the end of the course, students will be able to:</p> <ul class="course-checklist"> <li>Explain the role of vehicle safety in product development and design, including the evolution and limitations of safety technologies.</li> <li>Understand crash protection design constraints arising from lightweighting and packaging requirements.</li> <li>Explain human injury mechanisms under impact loads and the principles of occupant restraint systems.</li> <li>Understand safety risks and protection strategies for autonomous vehicles.</li> <li>Understand methods for establishing battery safety envelopes and failure tolerance under impact loads.</li> <li>Recognize innovative battery pack designs for electric vehicle crash protection.</li> </ul> </section> <section class="course-section"> <h2>Prerequisites</h2> <ul class="course-chips"> <li>Engineering mechanics</li> <li>Engineering mathematics</li> <li>Numerical methods</li> </ul> </section> <section class="course-section"> <h2>Teaching Format</h2> <p>The Chinese and English classes share the same course number and teaching team. Students may attend either language class.</p> <div class="course-cards"> <div class="course-card"> <h3>Chinese Class</h3> <p>Lectures and discussions are in Chinese; slides and supplementary materials are in English. Classes are also broadcast live via Rain Classroom for students who wish to attend online without registering.</p> </div> <div class="course-card"> <h3>English Class</h3> <p>Self-paced study of <a href="https://www.xuetangx.com/course/thu08021000357intl/14314101" target="_blank" rel="noopener">prerecorded lectures on XuetangX</a>, combined with four in-person sessions during the semester. These sessions may include focused reviews, questions and answers, and, where appropriate, student presentations followed by feedback and discussion. All sessions are conducted in English.</p> </div> </div> </section> <section class="course-section"> <h2>Course Schedule</h2> <p class="course-note">The lecture sequence is organized into four modules. Lecture numbers identify course content rather than confirmed teaching weeks. Crash sensing (an extension of Lecture 5) and Lecture 7 are optional.</p> <div class="course-module">Module 1 · Crash Mechanics and Safety Assessment</div> <ul class="course-schedule"> <li> <span class="schedule-no">Lecture 1</span><div> <span class="schedule-topic">Fundamentals of Vehicle Safety</span><span class="schedule-desc">Background of vehicle safety; Vehicle crash process and types of collisions; Components and structures relevant to crash safety design; Crash design requirements and process; New safety issues for electric vehicles and autonomous vehicles.</span> </div> </li> <li> <span class="schedule-no">Lecture 2</span><div> <span class="schedule-topic">Vehicle Response and Occupant Ride-Down under Frontal Collision</span><span class="schedule-desc">Vehicle crash pulse; Vehicle kinematics and occupant kinematics; Occupant ride-down; Crash pulse characterization; Design for harmonizing responses of vehicle and occupant; Influencing factors of crash severity.</span> </div> </li> <li> <span class="schedule-no">Lecture 3</span><div> <span class="schedule-topic">Human Body Injuries in Vehicle Collisions</span><span class="schedule-desc">Injury biomechanics – background, applications &amp; methods; Injury mechanism, injury characterization, mechanical response &amp; injury tolerance of human body under impact loading; Impact biomechanics exampled with body regions.</span> </div> </li> <li> <span class="schedule-no">Lecture 4</span><div> <span class="schedule-topic">Vehicle Crash Safety Assessment</span><span class="schedule-desc">Part 1: Vehicle Crash Test Methods; Vehicle crash test laboratory &amp; devices; Preparation of vehicle crash test; Types of vehicle crash tests and regulations; Sled test; Part 2: Crash Test Dummy; Purpose of crash test dummies; Hybrid III frontal impact dummy; Other dummies; Historical development of crash dummies; Crash dummy improvement and virtual assessment.</span> </div> </li> </ul> <div class="course-module">Module 2 · Occupant Restraint Systems</div> <ul class="course-schedule"> <li> <span class="schedule-no">Lecture 5</span><div> <span class="schedule-topic">Seatbelt and Airbag</span><span class="schedule-desc">Structures and components of seatbelt and airbag; Protection functions of seatbelt and airbag; Risks and hazards of airbag; Advanced seatbelts and airbags.</span> </div> </li> <li> <span class="schedule-no">Lecture 5</span><div> <span class="schedule-topic">Crash Sensing<span class="schedule-optional">Optional</span></span><span class="schedule-desc">Crash Data, Crash Analyses, Crash Signals; Crash Sensing Criteria and Algorithms; Procedure for Determining Trigger Threshold; Key Things of Crash Sensing.</span> </div> </li> <li> <span class="schedule-no">Lecture 6</span><div> <span class="schedule-topic">Seat as Occupant Impact Protection Device</span><span class="schedule-desc">Functions and structure of vehicle seat; Whiplash injury and protection; The debate between stiff and yielding seats; Sliding seat and seat mounted restraints.</span> </div> </li> <li> <span class="schedule-no">Lecture 7</span><div> <span class="schedule-topic">Protection of Child Passengers<span class="schedule-optional">Optional</span></span><span class="schedule-desc">Child safety issues in traffic accidents; Child Restraint System and crash safety assessment.</span> </div> </li> <li> <span class="schedule-no">Lecture 8</span><div> <span class="schedule-topic">Adaptive Protection for Autonomous Vehicle</span><span class="schedule-desc">Challenges in occupant crash protection; Adaptive occupant restraint; Crash protection concerning Asian body sizes; Smart and individualized crash protection; Unavoidable collisions to autonomous vehicles; The Europe OSCCAR Project.</span> </div> </li> </ul> <div class="course-module">Module 3 · Impact Interactions between Human Body and Vehicle Structures</div> <ul class="course-schedule"> <li> <span class="schedule-no">Lecture 9</span><div> <span class="schedule-topic">Side Impact Protection</span><span class="schedule-desc">Side impact accident and crash safety assessment; Analysis of side impact process; Analysis of pelvis pusher design; Interaction between side structure and occupant; Increasingly strict side impact protection requirement.</span> </div> </li> <li> <span class="schedule-no">Lecture 10</span><div> <span class="schedule-topic">Occupant Head Impact Protection</span><span class="schedule-desc">Background of occupant head impact problem; Mechanics model and rationales; How findings guide countermeasure design.</span> </div> </li> <li> <span class="schedule-no">Lecture 11</span><div> <span class="schedule-topic">Pedestrian Impact Protection</span><span class="schedule-desc">Characteristics of car-to-pedestrian collision accidents; Injuries in car-to-pedestrian collisions; Assessment methods for pedestrian impact safety; Vehicle design for pedestrian impact protection; Emerging subjects and future pedestrian protection.</span> </div> </li> </ul> <div class="course-module">Module 4 · Vehicle Structures and Materials under Impact</div> <ul class="course-schedule"> <li> <span class="schedule-no">Lecture 12</span><div> <span class="schedule-topic">Impact Mechanics of Thin-Walled Tubes</span><span class="schedule-desc">Thin-walled structural members of vehicle body and functions; Concept of plastic hinge; Design of axial crush of thin-walled tube; Bending of box tube.</span> </div> </li> <li> <span class="schedule-no">Lecture 13</span><div> <span class="schedule-topic">Impact Failures of Vehicle Materials (a short version)</span><span class="schedule-desc">Needs of material characterization and modeling for vehicle crash simulations; Challenges in testing and modeling material fracture behaviors under impact loading; Future development: data-driven method.</span> </div> </li> <li> <span class="schedule-no">Lecture 14</span><div> <span class="schedule-topic">Impact Safety of Battery</span><span class="schedule-desc">Battery safety in vehicle collision accidents; Damage of battery cell under crush and impact; Failure mechanisms of battery cell under mechanical abuse; Modeling of battery and electric vehicle for crash safety.</span> </div> </li> <li> <span class="schedule-no">Lecture 15</span><div> <span class="schedule-topic">Small Lightweight Vehicle and Crash Compatibility</span><span class="schedule-desc">Problem in reality: vehicle size and safety; Influencing factors of crash compatibility; Assessment of vehicle compatibility; Lightweight and safety.</span> </div> </li> </ul> </section> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © 2026 Intelligent Safety Laboratory, Tsinghua University. Contact: <a href="mailto:thuacl@163.com">thuacl@163.com</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
