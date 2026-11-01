@@ -225,7 +225,7 @@ syllabus:
 
 <section class="course-hero">
 <div class="course-hero-text">
-<div class="course-tags"><span>Science General Education</span><span>Model Course in Ideological and Political Education</span></div>
+<div class="course-tags"><span>Science General Education</span><span>High-Quality General Education Course Development Initiative</span><span>Model Course in Ideological and Political Education</span></div>
 <dl class="course-facts">
 <div><dt>Instructors</dt><dd>{{ page.instructor }}</dd></div>
 <div><dt>Term</dt><dd>{{ page.term }}</dd></div>
