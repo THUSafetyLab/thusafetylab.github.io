@@ -241,8 +241,8 @@ syllabus:
 <p>This course introduces the fundamental theories, research topics, and future trends of intelligent vehicle safety. Through this course, students are expected to understand how vehicle safety technologies affect human life, build a knowledge framework for future transportation safety, appreciate the value of science, technology, and industry, and develop the courage and ability to create and take responsibility. Course content includes:</p>
 <div class="course-cards">
 <div class="course-card"><h3>Fundamental Theories</h3><p>An overview of automotive safety and occupant restraint systems</p></div>
-<div class="course-card"><h3>Research Hotspots</h3><p>Intelligent vehicle safety protection and thermal runaway protection for electric vehicles</p></div>
 <div class="course-card"><h3>Future Trends</h3><p>Intelligent vehicles, future mobility, and transportation safety</p></div>
+<div class="course-card"><h3>Research Hotspots</h3><p>Explore our work on intelligent vehicle safety and EV thermal runaway prevention, featuring typical accident case analyses and an overview of our team's latest research</p></div>
 </div>
 </div>
 <figure class="course-photo">
