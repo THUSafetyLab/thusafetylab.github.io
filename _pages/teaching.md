@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Courses
-description: Our team offers four courses that cover crash safety, injury protection, and intelligent vehicle safety for students from their first year through graduate study. They are the First-Year Orientation Course, the general education course Safety of Intelligent Vehicle, the undergraduate restricted elective Vehicle Safety, and Fundamentals of Automotive Crash Safety, which is open to graduate and international students. Each course page outlines the course content and lecture topics.
+description: Our team offers four courses that cover crash safety, injury protection, and intelligent vehicle safety for students from their first year through graduate study. They are the First-Year Orientation Course, the general education course Safety of Intelligent Vehicle, the undergraduate restricted elective Vehicle Safety, and Fundamentals of Automotive Crash Safety, which is open to undergraduate, graduate and international students. Each course page outlines the course content and lecture topics.
 nav: true
 nav_order: 3
 calendar: true
