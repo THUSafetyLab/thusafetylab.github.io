@@ -32,6 +32,8 @@ td {
 }
 </style>
 
+{% assign intelligent_vehicle_course = site.teachings | where: "title", "Safety of Intelligent Vehicles" | first %}
+
 ## 2026
 
 | Name | Date | Award |
@@ -42,7 +44,7 @@ td {
 | Yunhan Li | 2026 | Outstanding Graduate of Hunan Province |
 | Zhixin Zhao | 2026 | Outstanding Undergraduate Thesis (University Level), Tsinghua University; Outstanding Graduate of Beijing Municipality; Outstanding Member of the Communist Youth League, Tsinghua University |
 | Bingbing Nie | 2026 | Teaching Excellence Award for 2025, Tsinghua University |
-| Bingbing Nie | 2026 | Demonstration Course in Moral and Values Education ([Safety of Intelligent Vehicles]({{ '/teachings/Safety%20of%20Intelligent%20Vehicle/' | relative_url }})), Tsinghua University; Exemplary Educator in Integrating Ethics and Values into Teaching, Tsinghua University |
+| Bingbing Nie | 2026 | Demonstration Course in Moral and Values Education ([Safety of Intelligent Vehicles]({{ intelligent_vehicle_course.url | relative_url }})), Tsinghua University; Exemplary Educator in Integrating Ethics and Values into Teaching, Tsinghua University |
 
 ## 2025
 
@@ -72,7 +74,7 @@ td {
 | Yi Yang | 2024 | National Scholarship for Undergraduate Students |
 | Hanshuo Wang | 2024 | Top Ten Athletes of the University Sports Teams, Tsinghua University |
 | Bingbing Nie | 2024 | Tsinghua University Course of Excellence ([Vehicle Safety]({{ '/teachings/Vehicle-safety/' | relative_url }})) |
-| Bingbing Nie | 2024 | Selected for the General Education Course Excellence Initiative, AI Track ([Safety of Intelligent Vehicles]({{ '/teachings/Safety%20of%20Intelligent%20Vehicle/' | relative_url }})), Tsinghua University; also designated as an AI general education course, included in the university's inaugural selection of courses fulfilling its moral and values education requirement, and included in the AI minor and course certificate programs |
+| Bingbing Nie | 2024 | Selected for the General Education Course Excellence Initiative, AI Track ([Safety of Intelligent Vehicles]({{ intelligent_vehicle_course.url | relative_url }})), Tsinghua University; also designated as an AI general education course, included in the university's inaugural selection of courses fulfilling its moral and values education requirement, and included in the AI minor and course certificate programs |
 | Bingbing Nie | 2024 | Outstanding Faculty Member in the Annual Performance Assessment (2024), School of Vehicle and Mobility, Tsinghua University |
 
 ## 2023
