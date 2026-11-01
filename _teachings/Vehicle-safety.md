@@ -140,6 +140,8 @@ syllabus:
   border-radius: 12px;
   background: #fff;
 }
+/* A card alone in its row spans the full width of the card grid */
+.course-card.full-row { grid-column: 1 / -1; }
 .course-card h3 { margin: 0 0 6px; color: var(--cp-purple-dark); font-size: 16px; font-weight: 700; }
 .course-card p { margin: 0; font-size: 14.5px; line-height: 1.65; }
 
@@ -231,7 +233,7 @@ syllabus:
 </div>
 </div>
 <figure class="course-photo">
-<img src="{{ '/assets/img/courses/VS-2.jpg' | relative_url }}" alt="Classroom photo from Vehicle Safety" loading="lazy">
+<img src="{{ '/assets/img/courses/VS-1.jpg' | relative_url }}" alt="Classroom photo from Vehicle Safety" loading="lazy">
 <figcaption>Classroom photo</figcaption>
 </figure>
 </div>
